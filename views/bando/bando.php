@@ -90,15 +90,14 @@
 <script>
     var defined = {
         layer_hokindoanh: "Hộ kinh doanh",
-        layer_cuahang: "Cửa hàng",
-        layer_doanhnghiep: "Doanh nghiệp",
-        layer_chinhanh: "Chi nhánh"
+             layer_doanhnghiep: "Doanh nghiệp",
+   
     };
     var DATA = {
         HomeUrl: "../",
         MapConfig: {
             mapId: "map",
-            defaultCenter: [10.765266023297716,106.60385683178902],
+            defaultCenter: [10.759610, 106.704339],
             defaultZoom: 13,
             defaultConfig: {maxZoom: 22},
             baseLayers: ["Bản đồ Google", "HCMGIS", "Ảnh vệ tinh", "MapBox"],
@@ -134,8 +133,8 @@
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                     id: 'streets-v9',
                 }),
-                "RanhThua": L.tileLayer.wms('http://kinhdoanhbinhtan.hcmgis.vn/geo113/dbkinhdoanh_binhtan/wms?', {
-                    layers: 'dbkinhdoanh_binhtan:ranh_thua',
+                "RanhThua": L.tileLayer.wms('http://kinhdoanhq4.hcmgis.vn/geo113/dbkinhdoanh_q4/wms?', {
+                    layers: 'dbkinhdoanh_q4:ranh_thua',
                     transparent: true,
                     format: 'image/png8',
                     maxZoom: 24,
@@ -151,7 +150,7 @@
         initMap();
         initListHokinhdoanh();
         initListDoanhnghiep()
-        initListCuahang()
+       
     })
 
     function initMap(config) {
@@ -255,32 +254,15 @@
                             }
                         })
                     });
-                       if (data.loaicuahang_id === 2) {
+                      
                         var divIcon = L.divIcon({
                             iconSize: [40, 48],
                             iconAnchor: [20, 48],
                             popupAnchor: [0, -48],
-                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/fuel.png"></div>'
+                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/warehouse.png"></div>'
                         });
                         leafletMarker.setIcon(divIcon);
-                    } else if (data.loaicuahang_id === 3) {
-                        var divIcon = L.divIcon({
-                            iconSize: [40, 48],
-                            iconAnchor: [20, 48],
-                            popupAnchor: [0, -48],
-                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/gas.png"></div>'
-                        });
-                        leafletMarker.setIcon(divIcon);
-                    } else if (data.loaicuahang_id === 1) {
-                        var divIcon = L.divIcon({
-                            iconSize: [40, 48],
-                            iconAnchor: [20, 48],
-                            popupAnchor: [0, -48],
-                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/flask.png"></div>'
-                        });
-                        leafletMarker.setIcon(divIcon);
-                    }
-                    DATA.Refs.Markers[data.id] = leafletMarker;
+                        DATA.Refs.Markers[data.id] = leafletMarker;
                 }
             }
         });
@@ -339,88 +321,7 @@
             }
         });
     }
-    function initCuahangGeojsonLayer(config) {
-
-        $.ajax({
-            url: DATA.HomeUrl + 'bando/cuahang-geojson',
-            dataType: 'json',
-            success: function (data) {
-                var pruneCluster = new PruneClusterForLeaflet();
-                data.map(function (item) {
-                    var prunemarker = new PruneCluster.Marker(item.geo_y, item.geo_x);
-                    prunemarker.data = item;
-                    pruneCluster.RegisterMarker(prunemarker);
-                });
-                DATA.Refs.LeafletLayers[defined.layer_cuahang] = pruneCluster;
-                DATA[config.mapId].Map.addLayer(pruneCluster);
-                DATA[config.mapId].MapControl.layercontrol.addOverlay(pruneCluster, defined.layer_cuahang);
-                pruneCluster.PrepareLeafletMarker = function (leafletMarker, data) {
-
-                    var popupid = 'marker-popup-' + data.id;
-
-                    leafletMarker.bindPopup('<div id="' + popupid + '"></div>');
-                    leafletMarker.on('mouseover', function (e) {
-                        var popupid = 'marker-popup-' + data.id;
-                        //   mapZoomAndPanTo(data.geo_y, data.geo_x);
-                        $.ajax({
-                            url: DATA.HomeUrl + 'bando/cuahang-get/?slug=' + data.id,
-                            success: function (html) {
-                                $('#' + popupid).empty().append(html);
-                            }
-                        })
-                        this.openPopup();
-                    });
-//                    leafletMarker.on('mouseout', function (e) {
-//                        this.closePopup();
-//                    });
-                    leafletMarker.on('click', function () {
-                        var popupid = 'marker-popup-' + data.id;
-                        //  mapZoomAndPanTo(data.geo_y, data.geo_x);
-                        $.ajax({
-                            url: DATA.HomeUrl + 'bando/cuahang-get/?slug=' + data.id,
-                            success: function (html) {
-                                $('#' + popupid).empty().append(html);
-                            }
-                        })
-                    });
-                    if (data.loaicuahang_id === 2) {
-                        var divIcon = L.divIcon({
-                            iconSize: [40, 48],
-                            iconAnchor: [20, 48],
-                            popupAnchor: [0, -48],
-                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/fuel.png"></div>'
-                        });
-                        leafletMarker.setIcon(divIcon);
-                    } else if (data.loaicuahang_id === 3) {
-                        var divIcon = L.divIcon({
-                            iconSize: [40, 48],
-                            iconAnchor: [20, 48],
-                            popupAnchor: [0, -48],
-                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/cart-icon.png"></div>'
-                        });
-                        leafletMarker.setIcon(divIcon);
-                    } else if (data.loaicuahang_id === 1) {
-                        var divIcon = L.divIcon({
-                            iconSize: [40, 48],
-                            iconAnchor: [20, 48],
-                            popupAnchor: [0, -48],
-                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/gas.png"></div>'
-                        });
-                        leafletMarker.setIcon(divIcon);
-                    } else if (data.loaicuahang_id === 4) {
-                        var divIcon = L.divIcon({
-                            iconSize: [40, 48],
-                            iconAnchor: [20, 48],
-                            popupAnchor: [0, -48],
-                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/cart-icon.png"></div>'
-                        });
-                        leafletMarker.setIcon(divIcon);
-                    }
-                    DATA.Refs.Markers[data.id] = leafletMarker;
-                }
-            }
-        });
-    }
+   
     function convertDataToHokihdoanhGeojson(list) {
         var geojson = [];
         list.map(function (item) {
@@ -455,23 +356,7 @@
         });
         return geojson;
     }
-    function convertDataToCuahangGeojson(list) {
-        var geojson = [];
-        list.map(function (item) {
-            geojson.push({
-                type: 'Feature',
-                geometry: {
-                    type: 'Point',
-                    coordinates: [item.geo_y, item.geo_x]
-                },
-                properties: {
-                    id: item.id,
-                    id_loaicuahang: item.id_loaicuahang
-                }
-            });
-        });
-        return geojson;
-    }
+  
 
     function initListHokinhdoanh() {
         loadAjaxToDivListHokinhdoanh(DATA.HomeUrl + '/bando/list-hokinhdoanh');
@@ -481,10 +366,7 @@
         loadAjaxToDivListDoanhnghiep(DATA.HomeUrl + '/bando/list-doanhnghiep');
         initSearchDn();
     }
-    function initListCuahang() {
-        loadAjaxToDivListCuahang(DATA.HomeUrl + '/bando/list-cuahang');
-        initSearchCh();
-    }
+  
     function initPagAjaxDivListHokinhdoanh() {
         $('.pagination li a').on('click', function (e) {
             e.preventDefault();
@@ -503,15 +385,7 @@
             return false;
         });
     }
-    function initPagAjaxDivListCuahang() {
-        $('.pagination li a').on('click', function (e) {
-            e.preventDefault();
-            var _this = $(this);
-            var url = _this.attr('href');
-            loadAjaxToDivListCuahang(url);
-            return false;
-        });
-    }
+  
 
     function initHokdClickEvent() {
         $('.hokd-item').on('click', function () {
@@ -522,15 +396,7 @@
                 mapZoomAndPanTo(y, x,20);
         });
     }
-    function initChClickEvent() {
-        $('.ch-item').on('click', function () {
-            var _this = $(this);
-            var x = _this.attr('data-point-x');
-            var y = _this.attr('data-point-y');
-            if (typeof (x) != 'undefined')
-                mapZoomAndPanTo(y, x);
-        });
-    }
+ 
     function initDnClickEvent() {
         $('.dn-item').on('click', function () {
             var _this = $(this);
@@ -613,14 +479,7 @@
             }
         })
     }
-    function initSearchCh() {
-        $('#search-boxch').on('keypress', function (e) {
-            if (e.keyCode == 13) {
-                var q = $(this).val();
-                loadAjaxToDivListCuahang(DATA.HomeUrl + '/bando/list-cuahang?q=' + q);
-            }
-        })
-    }
+   
 
     function loadAjaxToDivListHokinhdoanh(url) {
         var div = $('#list_hokinhdoanh');
@@ -644,17 +503,7 @@
             }
         });
     }
-    function loadAjaxToDivListCuahang(url) {
-        var div = $('#list_cuahang');
-        $.ajax({
-            url: url,
-            success: function (html) {
-                div.empty().append(html);
-                initPagAjaxDivListCuahang();
-                initChClickEvent();
-            }
-        });
-    }
+   
 
     function HokinhdoanhView(id_hkd) {
         var url_cg = "<?= Yii::$app->homeUrl ?>hokinhdoanh/viewbando?id=" + id_hkd;
@@ -663,13 +512,7 @@
             //  $('#myModalLabel').empty().html(name);
         })
     }
-    function CuahangView(id_cuahang) {
-        var url_cg = "<?= Yii::$app->homeUrl ?>cuahang/viewbando?id=" + id_cuahang;
-        $.get(url_cg, function (res) {
-            $('#ajaxModalContent').empty().html(res);
-            //  $('#myModalLabel').empty().html(name);
-        })
-    }
+ 
     function DoanhnghiepView(id_dn) {
         var url_cg = "<?= Yii::$app->homeUrl ?>doanhnghiep/viewbando?id=" + id_dn;
         $.get(url_cg, function (res) {

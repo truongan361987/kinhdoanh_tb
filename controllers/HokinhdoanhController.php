@@ -4,7 +4,7 @@ namespace app\controllers;
 
 use app\controllers\base\AbstractKinhdoanhq6Controller;
 use app\models\DmDanToc;
-use app\models\DmLoaicuahang;
+use app\models\DmLinhvuc;
 use app\models\DmMaNganh;
 use app\models\DmQuocTich;
 use app\models\GiaoThong;
@@ -42,7 +42,7 @@ class HokinhdoanhController extends AbstractKinhdoanhq6Controller {
         $dataProvider = NULL;
         $model['dmmanganh'] = DmMaNganh::find()->orderBy('ten_nganh')->all();
         $model['ranhphuong'] = RanhPhuong::find()->orderBy('tenphuong')->all();
-        $model['giaothong'] = GiaoThong::find()->orderBy('ten_duong')->distinct()->all();
+        $model['giaothong'] = GiaoThong::find()->orderBy('tenduong')->distinct()->all();
         $model['search'] = new HoKinhDoanhSearch();
         if ($request->isGet && $request->queryParams != null) {
             $params['HoKinhDoanhSearch'] = $request->queryParams;
@@ -79,7 +79,7 @@ class HokinhdoanhController extends AbstractKinhdoanhq6Controller {
     public function actionView($id) {
         $request = Yii::$app->request;
         $model['hokinhdoanh'] = $this->findVModel($id);
-         $model['vipham'] = ThongtinVipham::find()->where(['hkd_id' => $id])->orderBy('id_ttvp')->all();
+        $model['vipham'] = ThongtinVipham::find()->where(['hkd_id' => $id])->orderBy('id_ttvp')->all();
         return $this->render('view', [
                     'model' => $model,
         ]);
@@ -118,7 +118,7 @@ class HokinhdoanhController extends AbstractKinhdoanhq6Controller {
     public function actionViewbando($id) {
         $request = Yii::$app->request;
         $model['hokinhdoanh'] = $this->findVModel($id);
-         $model['vipham'] = ThongtinVipham::find()->where(['hkd_id' => $id])->orderBy('id_ttvp')->all();
+        $model['vipham'] = ThongtinVipham::find()->where(['hkd_id' => $id])->orderBy('id_ttvp')->all();
 
         return $this->renderAjax('view_bando', [
                     'model' => $model,
@@ -135,20 +135,20 @@ class HokinhdoanhController extends AbstractKinhdoanhq6Controller {
         $request = Yii::$app->request;
         $model['hokinhdoanh'] = new HoKinhDoanh();
         $model['dmmanganh'] = DmMaNganh::find()->orderBy('ten_nganh')->all();
-         $model['loaicuahang'] = DmLoaicuahang::find()->orderBy('id_loaicuahang')->all();
+        $model['linhvuc'] = DmLinhvuc::find()->orderBy('id_linhvuc')->all();
         $model['dmdantoc'] = DmDanToc::find()->orderBy('ten_dantoc')->all();
         $model['dmquoctich'] = DmQuocTich::find()->orderBy('ten_quoctich')->all();
         $model['ranhphuong'] = RanhPhuong::find()->orderBy('tenphuong')->all();
-        $model['giaothong'] = GiaoThong::find()->orderBy('ten_duong')->distinct()->all();
+        $model['giaothong'] = GiaoThong::find()->orderBy('tenduong')->distinct()->all();
         if ($model['hokinhdoanh']->load($request->post())) {
             if ($model['hokinhdoanh']->ngay_sinh != null) {
                 $model['hokinhdoanh']->ngay_sinh = date('Y-m-d', strtotime($model['hokinhdoanh']->ngay_sinh));
             }
-            if ($model['hokinhdoanh']->giayphep_ngay != null) {
-                $model['hokinhdoanh']->giayphep_ngay = date('Y-m-d', strtotime($model['hokinhdoanh']->giayphep_ngay));
-            }
             if ($model['hokinhdoanh']->ngay_cap != null) {
                 $model['hokinhdoanh']->ngay_cap = date('Y-m-d', strtotime($model['hokinhdoanh']->ngay_cap));
+            }
+            if ($model['hokinhdoanh']->ngaycap_giayphep != null) {
+                $model['hokinhdoanh']->ngaycap_giayphep = date('Y-m-d', strtotime($model['hokinhdoanh']->ngaycap_giayphep));
             }
             $model['hokinhdoanh']->save();
             UtilityService::alert('hkd_create_success');
@@ -173,20 +173,20 @@ class HokinhdoanhController extends AbstractKinhdoanhq6Controller {
         $model['hokinhdoanh'] = $this->findModel($id);
         $model['toado'] = $this->findVModel($id);
         $model['dmmanganh'] = DmMaNganh::find()->orderBy('ten_nganh')->all();
-         $model['loaicuahang'] = DmLoaicuahang::find()->orderBy('id_loaicuahang')->all();
+        $model['linhvuc'] = DmLinhvuc::find()->orderBy('id_linhvuc')->all();
         $model['dmdantoc'] = DmDanToc::find()->orderBy('ten_dantoc')->all();
         $model['dmquoctich'] = DmQuocTich::find()->orderBy('ten_quoctich')->all();
         $model['ranhphuong'] = RanhPhuong::find()->orderBy('tenphuong')->all();
-        $model['giaothong'] = GiaoThong::find()->orderBy('ten_duong')->distinct()->all();
+        $model['giaothong'] = GiaoThong::find()->orderBy('tenduong')->distinct()->all();
         if ($model['hokinhdoanh']->load($request->post())) {
             if ($model['hokinhdoanh']->ngay_sinh != null) {
                 $model['hokinhdoanh']->ngay_sinh = date('Y-m-d', strtotime($model['hokinhdoanh']->ngay_sinh));
             }
-            if ($model['hokinhdoanh']->giayphep_ngay != null) {
-                $model['hokinhdoanh']->giayphep_ngay = date('Y-m-d', strtotime($model['hokinhdoanh']->giayphep_ngay));
-            }
             if ($model['hokinhdoanh']->ngay_cap != null) {
                 $model['hokinhdoanh']->ngay_cap = date('Y-m-d', strtotime($model['hokinhdoanh']->ngay_cap));
+            }
+            if ($model['hokinhdoanh']->ngaycap_giayphep != null) {
+                $model['hokinhdoanh']->ngaycap_giayphep = date('Y-m-d', strtotime($model['hokinhdoanh']->ngaycap_giayphep));
             }
             if ($post['ToaDo']['geo_x'] != null && $post['ToaDo']['geo_y'] != null) {
                 $query = "update ho_kinh_doanh set geom = ST_GeomFromText('POINT(" . $post['ToaDo']['geo_x'] . " " . $post['ToaDo']['geo_y'] . ")') where id_hkd = " . $model['hokinhdoanh']->id_hkd;
@@ -271,7 +271,8 @@ class HokinhdoanhController extends AbstractKinhdoanhq6Controller {
 
         return $out;
     }
- public function actionVipham($id) {
+
+    public function actionVipham($id) {
         if (!UtilityService::paramValidate($id)) {
             return $this->redirect(Yii::$app->urlManager->createUrl('hokinhdoanh'));
         }
@@ -344,4 +345,5 @@ class HokinhdoanhController extends AbstractKinhdoanhq6Controller {
                     'model' => $model,
         ]);
     }
+
 }

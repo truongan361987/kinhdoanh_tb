@@ -34,9 +34,9 @@ use yii\widgets\DetailView;
                         </tr>
                         <tr>
                             <th>Giấy phép số</th>
-                            <td><?= $model['hokinhdoanh']->giayphep_so?></td>
+                            <td><?= $model['hokinhdoanh']->so_giayphep?></td>
                             <th>Cấp ngày</th>
-                            <td><?= ($model['hokinhdoanh']->giayphep_ngay != null) ? date('d-m-Y', strtotime($model['hokinhdoanh']->giayphep_ngay)) : ''?></td>
+                            <td><?= ($model['hokinhdoanh']->ngaycap_giayphep != null) ? date('d-m-Y', strtotime($model['hokinhdoanh']->ngaycap_giayphep)) : ''?></td>
                         </tr>
                         <tr>
                             <th>Điện thoại</th>

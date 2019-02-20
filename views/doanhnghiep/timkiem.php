@@ -64,7 +64,7 @@ CrudAsset::register($this);
                     <?= $form->field($model['search'], 'so_nha')->input('text')->label('Số nhà') ?>
                 </div>
                 <div class="col-lg-4">
-                    <?= $form->field($model['search'], 'ten_duong')->dropDownList(ArrayHelper::map($model['giaothong'], 'ten_duong', 'ten_duong'), ['prompt' => 'Chọn đường'])->label('Tên đường') ?>
+                    <?= $form->field($model['search'], 'ten_duong')->dropDownList(ArrayHelper::map($model['giaothong'], 'tenduong', 'tenduong'), ['prompt' => 'Chọn đường'])->label('Tên đường') ?>
                 </div>
                 <div class="col-sm-4">
                     <?= $form->field($model['search'], 'ten_phuong')->dropDownList(ArrayHelper::map($model['ranhphuong'], 'tenphuong', 'tenphuong'), ['prompt' => 'Chọn phường'])->label('Tên phường') ?>

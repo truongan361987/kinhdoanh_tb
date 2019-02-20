@@ -23,7 +23,7 @@ class HoKinhDoanhSearch extends HoKinhDoanh {
         return [
             [['id_hkd', 'von_kd', 'ma_nganh', 'gioi_tinh', 'loaicuahang_id'], 'integer'],
             [['tu_ngay', 'den_ngay'], 'safe'],
-            [['ten_hkd', 'dien_thoai', 'fax', 'email', 'nganh_kd', 'website', 'nguoi_daidien', 'dan_toc', 'ngay_sinh', 'quoc_tich', 'so_cmnd', 'ngay_cap', 'noi_cap', 'hokhau_thuongtru', 'noisong_hientai', 'so_nha', 'ten_duong', 'ten_phuong', 'vi_tri', 'giayphep_so', 'ghi_chu', 'geom', 'giayphep_ngay'], 'safe'],
+            [['ten_hkd', 'dien_thoai', 'fax', 'email', 'nganh_kd', 'website', 'nguoi_daidien', 'dan_toc', 'ngay_sinh', 'quoc_tich', 'so_cmnd', 'ngay_cap', 'noi_cap', 'hokhau_thuongtru', 'noisong_hientai', 'so_nha', 'ten_duong', 'ten_phuong', 'vi_tri', 'so_giayphep', 'ghi_chu', 'geom', 'ngaycap_giayphep'], 'safe'],
         ];
     }
 
@@ -69,7 +69,7 @@ class HoKinhDoanhSearch extends HoKinhDoanh {
             'von_kd' => $this->von_kd,
             'ngay_sinh' => $this->ngay_sinh,
             'ngay_cap' => $this->ngay_cap,
-            'giayphep_ngay' => $this->giayphep_ngay,
+            'ngaycap_giayphep' => $this->ngaycap_giayphep,
             'gioi_tinh' => $this->gioi_tinh,
             'loaicuahang_id' => $this->loaicuahang_id,
         ]);
@@ -92,10 +92,10 @@ class HoKinhDoanhSearch extends HoKinhDoanh {
                 ->andFilterWhere(['like', 'upper(ten_duong)', mb_strtoupper($this->ten_duong)])
                 ->andFilterWhere(['like', 'upper(ten_phuong)', mb_strtoupper($this->ten_phuong)])
                 ->andFilterWhere(['like', 'upper(vi_tri)', mb_strtoupper($this->vi_tri)])
-                ->andFilterWhere(['like', 'upper(giayphep_so)', mb_strtoupper($this->giayphep_so)])
+                ->andFilterWhere(['like', 'upper(so_giayphep)', mb_strtoupper($this->so_giayphep)])
                 ->andFilterWhere(['like', 'upper(ghi_chu)', mb_strtoupper($this->ghi_chu)]);
         if ($this->tu_ngay != null && $this->den_ngay != null) {
-            $query->andWhere("giayphep_ngay between '" . date('Y-m-d', strtotime(str_replace('/', '-', $this->tu_ngay))) . "' and '" . date('Y-m-d', strtotime(str_replace('/', '-', $this->den_ngay))) . "'");
+            $query->andWhere("ngaycap_giayphep between '" . date('Y-m-d', strtotime(str_replace('/', '-', $this->tu_ngay))) . "' and '" . date('Y-m-d', strtotime(str_replace('/', '-', $this->den_ngay))) . "'");
         }
         return $dataProvider;
     }

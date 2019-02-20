@@ -37,7 +37,7 @@
 <div class="row">
     <div class="col-sm-12">
         <div class="portlet light bordered">
-             <div class="portlet-title">
+            <div class="portlet-title">
                 <div class="caption">
                     <span class="caption-subject bold uppercase font-dark">Theo phường</span>
                 </div>
@@ -48,17 +48,24 @@
             <div class="portlet-body">
                 <div class="tabbable-line form-group">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a data-toggle="tab" href="#be">An Lạc</a></li>
-                        <li><a data-toggle="tab" href="#bt">An Lạc A</a></li>
-                        <li><a data-toggle="tab" href="#ck">Bình Hưng Hòa</a></li>
-                        <li><a data-toggle="tab" href="#ol" >Bình Hưng Hòa A</a></li>
-                        <li><a data-toggle="tab" href="#cg" >Bình Hưng Hòa B</a></li>
-                        <li><a data-toggle="tab" href="#dk" >Bình Trị Đông</a></li>
-                        <li><a data-toggle="tab" href="#ct" >Bình Trị Đông A</a></li>
-                        <li><a data-toggle="tab" href="#tb" >Bình Trị Đông B</a></li>
-                        <li><a data-toggle="tab" href="#nl" >Tân Tạo</a></li>
-                        <li><a data-toggle="tab" href="#td" >Tân Tạo A</a></li>
-                                       </ul>
+                        <li class="active"><a data-toggle="tab" href="#be">Phường 1</a></li>
+                        <li><a data-toggle="tab" href="#bt">Phường 2</a></li>
+                        <li><a data-toggle="tab" href="#ck">Phường 3</a></li>
+                        <li><a data-toggle="tab" href="#ol" >Phường 4</a></li>
+                        <li><a data-toggle="tab" href="#cg" >Phường 5</a></li>
+                        <li><a data-toggle="tab" href="#dk" >Phường 6</a></li>
+
+                        <li><a data-toggle="tab" href="#tb" >Phường 8</a></li>
+                        <li><a data-toggle="tab" href="#nl" >Phường 9</a></li>
+                        <li><a data-toggle="tab" href="#td" >Phường 10</a></li>
+                        <li><a data-toggle="tab" href="#11" >Phường 11</a></li>
+                        <li><a data-toggle="tab" href="#12" >Phường 12</a></li>
+                        <li><a data-toggle="tab" href="#13" >Phường 13</a></li>
+                        <li><a data-toggle="tab" href="#14" >Phường 14</a></li>
+                        <li><a data-toggle="tab" href="#15" >Phường 15</a></li>
+                        <li><a data-toggle="tab" href="#ct" >Phường 16</a></li>
+                        <li><a data-toggle="tab" href="#17" >Phường 18</a></li>
+                    </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="be">
                             <div id="bennghe" class="" style="height: 500px;width: 100%"></div>
@@ -72,23 +79,41 @@
                         <div class="tab-pane " id="ol">
                             <div id="caulanh" class="" style="height: 500px;width: 100%"></div>
                         </div>
-                         <div class="tab-pane " id="cg">
+                        <div class="tab-pane " id="cg">
                             <div id="cogiang" class="" style="height: 500px;width: 100%"></div>
                         </div>
-                         <div class="tab-pane " id="dk">
+                        <div class="tab-pane " id="dk">
                             <div id="dakao" class="" style="height: 500px;width: 100%"></div>
                         </div>
-                         <div class="tab-pane " id="ct">
+                        <div class="tab-pane " id="ct">
                             <div id="cutrinh" class="" style="height: 500px;width: 100%"></div>
                         </div>
-                         <div class="tab-pane " id="tb">
+                        <div class="tab-pane " id="tb">
                             <div id="thaibinh" class="" style="height: 500px;width: 100%"></div>
                         </div>
-                         <div class="tab-pane " id="nl">
+                        <div class="tab-pane " id="nl">
                             <div id="ngulao" class="" style="height: 500px;width: 100%"></div>
                         </div>
-                         <div class="tab-pane " id="td">
+                        <div class="tab-pane " id="td">
                             <div id="tandinh" class="" style="height: 500px;width: 100%"></div>
+                        </div>
+                        <div class="tab-pane " id="11">
+                            <div id="11" class="" style="height: 500px;width: 100%"></div>
+                        </div>
+                        <div class="tab-pane " id="12">
+                            <div id="12" class="" style="height: 500px;width: 100%"></div>
+                        </div>
+                        <div class="tab-pane " id="13">
+                            <div id="13" class="" style="height: 500px;width: 100%"></div>
+                        </div>
+                        <div class="tab-pane " id="14">
+                            <div id="14" class="" style="height: 500px;width: 100%"></div>
+                        </div>
+                        <div class="tab-pane " id="15">
+                            <div id="15" class="" style="height: 500px;width: 100%"></div>
+                        </div>
+                        <div class="tab-pane " id="17">
+                            <div id="17" class="" style="height: 500px;width: 100%"></div>
                         </div>
                     </div>                
 
@@ -521,6 +546,264 @@
         },
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tktandinh, JSON_UNESCAPED_UNICODE) ?>,
+        "valueField": "sl_hokinhdoanh",
+        "titleField": "ten_loai",
+        "balloon": {
+            "fixedPosition": true
+        },
+        "export": {
+            "enabled": true
+        }
+    });
+    var chart = AmCharts.makeChart("11", {
+        "type": "pie",
+        "theme": "light",
+        "legend": {
+            "position": "right",
+            "marginRight": 100,
+            "autoMargins": false
+        },
+        "innerRadius": "0%",
+        "defs": {
+            "filter": [{
+                    "id": "shadow",
+                    "width": "200%",
+                    "height": "200%",
+                    "feOffset": {
+                        "result": "offOut",
+                        "in": "SourceAlpha",
+                        "dx": 0,
+                        "dy": 0
+                    },
+                    "feGaussianBlur": {
+                        "result": "blurOut",
+                        "in": "offOut",
+                        "stdDeviation": 5
+                    },
+                    "feBlend": {
+                        "in": "SourceGraphic",
+                        "in2": "blurOut",
+                        "mode": "normal"
+                    }
+                }]
+        },
+        "labelsEnabled": false,
+        "dataProvider": <?= json_encode($tk11, JSON_UNESCAPED_UNICODE) ?>,
+        "valueField": "sl_hokinhdoanh",
+        "titleField": "ten_loai",
+        "balloon": {
+            "fixedPosition": true
+        },
+        "export": {
+            "enabled": true
+        }
+    });
+    var chart = AmCharts.makeChart("12", {
+        "type": "pie",
+        "theme": "light",
+        "legend": {
+            "position": "right",
+            "marginRight": 100,
+            "autoMargins": false
+        },
+        "innerRadius": "0%",
+        "defs": {
+            "filter": [{
+                    "id": "shadow",
+                    "width": "200%",
+                    "height": "200%",
+                    "feOffset": {
+                        "result": "offOut",
+                        "in": "SourceAlpha",
+                        "dx": 0,
+                        "dy": 0
+                    },
+                    "feGaussianBlur": {
+                        "result": "blurOut",
+                        "in": "offOut",
+                        "stdDeviation": 5
+                    },
+                    "feBlend": {
+                        "in": "SourceGraphic",
+                        "in2": "blurOut",
+                        "mode": "normal"
+                    }
+                }]
+        },
+        "labelsEnabled": false,
+        "dataProvider": <?= json_encode($tk12, JSON_UNESCAPED_UNICODE) ?>,
+        "valueField": "sl_hokinhdoanh",
+        "titleField": "ten_loai",
+        "balloon": {
+            "fixedPosition": true
+        },
+        "export": {
+            "enabled": true
+        }
+    });
+    var chart = AmCharts.makeChart("13", {
+        "type": "pie",
+        "theme": "light",
+        "legend": {
+            "position": "right",
+            "marginRight": 100,
+            "autoMargins": false
+        },
+        "innerRadius": "0%",
+        "defs": {
+            "filter": [{
+                    "id": "shadow",
+                    "width": "200%",
+                    "height": "200%",
+                    "feOffset": {
+                        "result": "offOut",
+                        "in": "SourceAlpha",
+                        "dx": 0,
+                        "dy": 0
+                    },
+                    "feGaussianBlur": {
+                        "result": "blurOut",
+                        "in": "offOut",
+                        "stdDeviation": 5
+                    },
+                    "feBlend": {
+                        "in": "SourceGraphic",
+                        "in2": "blurOut",
+                        "mode": "normal"
+                    }
+                }]
+        },
+        "labelsEnabled": false,
+        "dataProvider": <?= json_encode($tk13, JSON_UNESCAPED_UNICODE) ?>,
+        "valueField": "sl_hokinhdoanh",
+        "titleField": "ten_loai",
+        "balloon": {
+            "fixedPosition": true
+        },
+        "export": {
+            "enabled": true
+        }
+    });
+    var chart = AmCharts.makeChart("14", {
+        "type": "pie",
+        "theme": "light",
+        "legend": {
+            "position": "right",
+            "marginRight": 100,
+            "autoMargins": false
+        },
+        "innerRadius": "0%",
+        "defs": {
+            "filter": [{
+                    "id": "shadow",
+                    "width": "200%",
+                    "height": "200%",
+                    "feOffset": {
+                        "result": "offOut",
+                        "in": "SourceAlpha",
+                        "dx": 0,
+                        "dy": 0
+                    },
+                    "feGaussianBlur": {
+                        "result": "blurOut",
+                        "in": "offOut",
+                        "stdDeviation": 5
+                    },
+                    "feBlend": {
+                        "in": "SourceGraphic",
+                        "in2": "blurOut",
+                        "mode": "normal"
+                    }
+                }]
+        },
+        "labelsEnabled": false,
+        "dataProvider": <?= json_encode($tk14, JSON_UNESCAPED_UNICODE) ?>,
+        "valueField": "sl_hokinhdoanh",
+        "titleField": "ten_loai",
+        "balloon": {
+            "fixedPosition": true
+        },
+        "export": {
+            "enabled": true
+        }
+    });
+    var chart = AmCharts.makeChart("15", {
+        "type": "pie",
+        "theme": "light",
+        "legend": {
+            "position": "right",
+            "marginRight": 100,
+            "autoMargins": false
+        },
+        "innerRadius": "0%",
+        "defs": {
+            "filter": [{
+                    "id": "shadow",
+                    "width": "200%",
+                    "height": "200%",
+                    "feOffset": {
+                        "result": "offOut",
+                        "in": "SourceAlpha",
+                        "dx": 0,
+                        "dy": 0
+                    },
+                    "feGaussianBlur": {
+                        "result": "blurOut",
+                        "in": "offOut",
+                        "stdDeviation": 5
+                    },
+                    "feBlend": {
+                        "in": "SourceGraphic",
+                        "in2": "blurOut",
+                        "mode": "normal"
+                    }
+                }]
+        },
+        "labelsEnabled": false,
+        "dataProvider": <?= json_encode($tk15, JSON_UNESCAPED_UNICODE) ?>,
+        "valueField": "sl_hokinhdoanh",
+        "titleField": "ten_loai",
+        "balloon": {
+            "fixedPosition": true
+        },
+        "export": {
+            "enabled": true
+        }
+    });
+    var chart = AmCharts.makeChart("17", {
+        "type": "pie",
+        "theme": "light",
+        "legend": {
+            "position": "right",
+            "marginRight": 100,
+            "autoMargins": false
+        },
+        "innerRadius": "0%",
+        "defs": {
+            "filter": [{
+                    "id": "shadow",
+                    "width": "200%",
+                    "height": "200%",
+                    "feOffset": {
+                        "result": "offOut",
+                        "in": "SourceAlpha",
+                        "dx": 0,
+                        "dy": 0
+                    },
+                    "feGaussianBlur": {
+                        "result": "blurOut",
+                        "in": "offOut",
+                        "stdDeviation": 5
+                    },
+                    "feBlend": {
+                        "in": "SourceGraphic",
+                        "in2": "blurOut",
+                        "mode": "normal"
+                    }
+                }]
+        },
+        "labelsEnabled": false,
+        "dataProvider": <?= json_encode($tk17, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
         "titleField": "ten_loai",
         "balloon": {

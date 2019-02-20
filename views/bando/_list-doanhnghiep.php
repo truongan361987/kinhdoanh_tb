@@ -19,7 +19,7 @@
                     </div>
                      <div class="loaihinh">Loại hình: <?= $model['ten_loai'] ?></div>
                     <div class="daidien">Người đại diện: <?= $model['nguoi_daidien'] ?></div>
-                    <div class="madn">Mã DN: <?= (($model['ma_dn'] == NULL) ? '(Chưa có)' : $model['ma_dn']) ?>
+                    <div class="madn">Mã DN: <?= (($model['so_giayphep'] == NULL) ? '(Chưa có)' : $model['so_giayphep']) ?>
                     </div>
                    
                     <div class="nganhnghe" title="<?= $model['nganh_kd'] ?>">Ngành KD: <?= $model['nganh_kd'] ?> - Mã ngành:  <?= (($model['ma_nganh'] == NULL) ? '(Chưa có)' : $model['ma_nganh']) ?>  </div>

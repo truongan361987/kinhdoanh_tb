@@ -21,7 +21,7 @@ class DoanhNghiepSearch extends DoanhNghiep {
     public function rules() {
         return [
             [['id_doanhnghiep', 'loaihinhdn_id'], 'integer'],
-            [['ten_dn', 'so_nha', 'ten_duong', 'ten_phuong', 'dien_thoai', 'nguoi_daidien', 'nganh_kd', 'ngay_cap', 'ngay_thaydoi', 'so_laodong', 'geom', 'ma_nganh', 'ghi_chu', 'ma_dn'], 'safe'],
+            [['ten_dn', 'so_nha', 'ten_duong', 'ten_phuong', 'dien_thoai', 'nguoi_daidien', 'nganh_kd', 'ngaycap_giayphep', 'ngay_thaydoi', 'so_laodong', 'geom', 'ma_nganh', 'ghi_chu', 'so_giayphep'], 'safe'],
             [['von_dieule'], 'number'],
             [['tu_ngay', 'den_ngay'], 'safe'],
         ];
@@ -64,7 +64,7 @@ class DoanhNghiepSearch extends DoanhNghiep {
             'id_doanhnghiep' => $this->id_doanhnghiep,
             'loaihinhdn_id' => $this->loaihinhdn_id,
             'von_dieule' => $this->von_dieule,
-            'ngay_cap' => $this->ngay_cap,
+            'ngaycap_giayphep' => $this->ngaycap_giayphep,
             'ngay_thaydoi' => $this->ngay_thaydoi,
         ]);
 
@@ -72,16 +72,14 @@ class DoanhNghiepSearch extends DoanhNghiep {
                 ->andFilterWhere(['like', 'upper(so_nha)', mb_strtoupper($this->so_nha)])
                 ->andFilterWhere(['like', 'upper(ten_duong)', mb_strtoupper($this->ten_duong)])
                 ->andFilterWhere(['like', 'upper(ten_phuong)', mb_strtoupper($this->ten_phuong)])
-                ->andFilterWhere(['like', 'upper(dien_thoai)', mb_strtoupper($this->dien_thoai)])
                 ->andFilterWhere(['like', 'upper(nguoi_daidien)', mb_strtoupper($this->nguoi_daidien)])
                 ->andFilterWhere(['like', 'upper(nganh_kd)', mb_strtoupper($this->nganh_kd)])
                 ->andFilterWhere(['like', 'upper(so_laodong)', mb_strtoupper($this->so_laodong)])
                 ->andFilterWhere(['like', 'upper(geom)', mb_strtoupper($this->geom)])
                 ->andFilterWhere(['like', 'upper(ma_nganh)', mb_strtoupper($this->ma_nganh)])
-                ->andFilterWhere(['like', 'upper(ghi_chu)', mb_strtoupper($this->ghi_chu)])
-                ->andFilterWhere(['like', 'upper(ma_dn)', mb_strtoupper($this->ma_dn)]);
- if ($this->tu_ngay != null && $this->den_ngay != null) {
-            $query->andWhere("ngay_cap between '" . date('Y-m-d', strtotime(str_replace('/', '-', $this->tu_ngay))) . "' and '" . date('Y-m-d', strtotime(str_replace('/', '-', $this->den_ngay))) . "'");
+                ->andFilterWhere(['like', 'upper(so_giayphep)', mb_strtoupper($this->so_giayphep)]);
+        if ($this->tu_ngay != null && $this->den_ngay != null) {
+            $query->andWhere("ngaycap_giayphep between '" . date('Y-m-d', strtotime(str_replace('/', '-', $this->tu_ngay))) . "' and '" . date('Y-m-d', strtotime(str_replace('/', '-', $this->den_ngay))) . "'");
         }
         return $dataProvider;
     }

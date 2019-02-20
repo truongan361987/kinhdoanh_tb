@@ -22,7 +22,7 @@ use kartik\form\ActiveForm;
         <div class="portlet-title bg-blue-skhcn">
             <div class="caption">
                 <span class="caption-subject font-white bold uppercase"><i
-                        class="fa fa-sign-in font-white"></i> HỆ THỐNG QUẢN LÝ KINH DOANH QUẬN BÌNH TÂN</span>
+                        class="fa fa-sign-in font-white"></i> HỆ THỐNG QUẢN LÝ KINH DOANH QUẬN 4</span>
             </div>
         </div>
         <div class="portlet-body">

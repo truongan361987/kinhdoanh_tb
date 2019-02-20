@@ -33,9 +33,9 @@ use yii\widgets\DetailView;
                         </tr>
                         <tr>
                             <th>Giấy phép số</th>
-                            <td><?= $model['doanhnghiep']->ma_dn ?></td>
+                            <td><?= $model['doanhnghiep']->so_giayphep ?></td>
                             <th>Ngày cấp</th>
-                            <td><?= ($model['doanhnghiep']->ngay_cap != null) ? date('d-m-Y', strtotime($model['doanhnghiep']->ngay_cap)) : '' ?></td>
+                            <td><?= ($model['doanhnghiep']->ngaycap_giayphep != null) ? date('d-m-Y', strtotime($model['doanhnghiep']->ngaycap_giayphep)) : '' ?></td>
                             <th>Ngày thay đổi</th>
                             <td><?= ($model['doanhnghiep']->ngay_thaydoi != null) ? date('d-m-Y', strtotime($model['doanhnghiep']->ngay_thaydoi)) : '' ?></td>
                         </tr>

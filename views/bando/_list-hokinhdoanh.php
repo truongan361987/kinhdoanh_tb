@@ -17,9 +17,9 @@
                             <span style=''><i style='color: gray' class="fa fa-map-marker"></i></span>
                         <?php endif; ?>
                     </div>
-                    <div class="loaihinh" title="<?= $model['ten_loai'] ?>">Loại hình: <?= $model['ten_loai'] ?></div>
+                 
                     <div class="daidien">Người đại diện: <?= $model['nguoi_daidien'] ?></div>
-                   <div class="giayphepso">Số GCN: <?= $model['giayphep_so'] ?> - Ngày cấp: <?= (($model['giayphep_ngay'] == NULL) ? '(Chưa có)' : date('d/m/Y', strtotime($model['giayphep_ngay']))) ?>   </div>
+                   <div class="giayphepso">Số GCN: <?= $model['so_giayphep'] ?> - Ngày cấp: <?= (($model['ngaycap_giayphep'] == NULL) ? '(Chưa có)' : date('d/m/Y', strtotime($model['ngaycap_giayphep']))) ?>   </div>
                     <div class="dienthoai">Điện thoại: <?= (($model['dien_thoai'] == NULL) ? '(Chưa có)' : $model['dien_thoai']) ?>
                           <div class="diachi">Địa chỉ:  <?= (($model['vi_tri'] == NULL) ? '' : $model['vi_tri'] . ', ') . (($model['so_nha'] == NULL) ? '' : $model['so_nha'] . ', ') . (($model['ten_duong'] == NULL) ? '' : $model['ten_duong'] . ', ') . (($model['ten_phuong'] == NULL) ? '' : $model['ten_phuong']) ?>
                     </div>

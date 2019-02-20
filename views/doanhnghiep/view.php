@@ -67,33 +67,40 @@ use yii\widgets\DetailView;
                                         'ten_dn',
                                         [
                                             'label' => 'Địa chỉ',
-                                            'value' => (($model['doanhnghiep']->so_nha == NULL) ? '' : $model['doanhnghiep']->so_nha . ', ') . (($model['doanhnghiep']->ten_duong == NULL) ? '' : $model['doanhnghiep']->ten_duong . ', ') . (($model['doanhnghiep']->ten_phuong == NULL) ? '' : $model['doanhnghiep']->ten_phuong . ', '),
+                                            'value' => (($model['doanhnghiep']->so_nha == NULL) ? '' : $model['doanhnghiep']->so_nha . ', ') . (($model['doanhnghiep']->ten_duong == NULL) ? '' : $model['doanhnghiep']->ten_duong . ', ') . (($model['doanhnghiep']->ten_phuong == NULL) ? '' : $model['doanhnghiep']->ten_phuong ),
                                         ],
                                         'ten_loai',
-                                        'ma_nganh',
-                                        'ma_dn',
+                                        'so_giayphep',
                                         [
-                                            'attribute' => 'ngay_cap',
+                                            'attribute' => 'ngaycap_giayphep',
                                             'format' => ['date', 'php:d-m-Y'],
                                         ],
                                         [
                                             'attribute' => 'ngay_thaydoi',
                                             'format' => ['date', 'php:d-m-Y'],
                                         ],
-                                        [
-                                            'attribute' => 'dien_thoai',
-                                            'value' => ($model['doanhnghiep']->dien_thoai == null) ? '(Chưa có)' : $model['doanhnghiep']->dien_thoai,
-                                        ],
-                                        [
-                                            'attribute' => 'Số lao động',
-                                            'value' => ($model['doanhnghiep']->so_laodong == null) ? '(Chưa có)' : $model['doanhnghiep']->so_laodong,
-                                        ],
+                                        'ma_nganh',
                                         'nganh_kd',
+                                        'nguoi_daidien',
+                                        [
+                                            'label' => 'Giới Tính',
+                                            'value' => ($model['doanhnghiep']->gioi_tinh == null) ? '' : (($model['doanhnghiep']->gioi_tinh == 1) ? 'Nam' : 'Nữ'),
+                                        ],
+                                        [
+                                            'attribute' => 'ngay_sinh',
+                                            'format' => ['date', 'php:d-m-Y'],
+                                        ],
+                                        'so_cmnd',
+                                        'thanh_vien',
+                                        'so_laodong',
                                         [
                                             'attribute' => 'von_dieule',
-                                            'value' => ($model['doanhnghiep']->von_dieule == null) ? '(Chưa có)' : $model['doanhnghiep']->von_dieule,
+                                            'value' => number_format($model['doanhnghiep']->von_dieule, 0, ',', ','),
                                         ],
-                                        'nguoi_daidien',
+                                        'quanly_thue',
+                                        'loaihinh_kinhte',
+                                        'dien_thoai',
+                                        'tinhtrang_hd'
                                     ],
                                 ])
                                 ?>

@@ -9,7 +9,6 @@ use Yii;
  *
  * @property integer $id_doanhnghiep
  * @property string $ten_dn
- * @property string $ten_loai
  * @property integer $loaihinhdn_id
  * @property string $so_nha
  * @property string $ten_duong
@@ -18,69 +17,98 @@ use Yii;
  * @property string $dien_thoai
  * @property string $nguoi_daidien
  * @property string $nganh_kd
- * @property string $ngay_cap
+ * @property string $ngaycap_giayphep
  * @property string $ngay_thaydoi
  * @property string $so_laodong
  * @property string $geom
  * @property string $ma_nganh
- * @property string $ma_dn
+ * @property string $so_giayphep
+ * @property string $tinhtrang_hd
+ * @property string $tinhtrang_thue
+ * @property string $phuong_rasoat
+ * @property integer $linhvuc_id
+ * @property integer $gioi_tinh
+ * @property string $ngay_sinh
+ * @property string $so_cmnd
+ * @property string $dan_toc
+ * @property string $quoc_tich
+ * @property string $thanh_vien
+ * @property string $quanly_thue
+ * @property string $loaihinh_kinhte
+ * @property string $ten_loaihinh
+ * @property string $ten_loai
+ * @property string $ten_linhvuc
  * @property double $geo_x
  * @property double $geo_y
  */
-class VDoanhnghiep extends \yii\db\ActiveRecord {
-
+class VDoanhnghiep extends \yii\db\ActiveRecord
+{
     /**
      * @inheritdoc
      */
-    public static function tableName() {
+    public static function tableName()
+    {
         return 'v_doanhnghiep';
     }
 
     /**
      * @inheritdoc
      */
-    public function rules() {
+    public function rules()
+    {
         return [
-            [['id_doanhnghiep', 'loaihinhdn_id'], 'integer'],
+            [['id_doanhnghiep', 'loaihinhdn_id', 'linhvuc_id', 'gioi_tinh'], 'integer'],
+            [['ten_dn', 'so_nha', 'ten_duong', 'dien_thoai', 'nguoi_daidien', 'nganh_kd', 'so_laodong', 'geom', 'ma_nganh', 'so_giayphep', 'so_cmnd', 'dan_toc', 'quoc_tich', 'thanh_vien', 'quanly_thue', 'loaihinh_kinhte', 'ten_loaihinh'], 'string'],
             [['von_dieule', 'geo_x', 'geo_y'], 'number'],
-            [['ngay_cap', 'ngay_thaydoi'], 'safe'],
-            [['geom'], 'string'],
-            [['ten_dn', 'nganh_kd'], 'string', 'max' => 300],
-            [['ten_loai'], 'string', 'max' => 200],
-            [['so_nha', 'ten_duong', 'ten_phuong', 'dien_thoai', 'nguoi_daidien', 'so_laodong', 'ma_nganh'], 'string', 'max' => 100],
-            [['ma_dn'], 'string', 'max' => 50],
+            [['ngaycap_giayphep', 'ngay_thaydoi', 'ngay_sinh'], 'safe'],
+            [['ten_phuong'], 'string', 'max' => 100],
+            [['tinhtrang_hd', 'tinhtrang_thue', 'phuong_rasoat'], 'string', 'max' => 300],
+            [['ten_loai', 'ten_linhvuc'], 'string', 'max' => 200],
         ];
     }
 
     /**
      * @inheritdoc
      */
-    public function attributeLabels() {
+    public function attributeLabels()
+    {
         return [
             'id_doanhnghiep' => 'Id Doanhnghiep',
-            'ten_loai' => 'Loại hình',
-            'geo_x' => 'Geo X',
-            'geo_y' => 'Geo Y',
-            'ten_dn' => 'Tên doanh nghiệp',
+            'ten_dn' => 'Ten Dn',
             'loaihinhdn_id' => 'Loaihinhdn ID',
-            'so_nha' => 'Số nhà',
-            'ten_duong' => 'Tên đường',
-            'ten_phuong' => 'Tên Phường',
-            'von_dieule' => 'Vốn điều lệ',
-            'dien_thoai' => 'Điện thoại',
-            'nguoi_daidien' => 'Người đại diện',
-            'nganh_kd' => 'Ngành nghề KD',
-            'ngay_cap' => 'Ngày cấp',
-            'ngay_thaydoi' => 'Ngày thay đổi',
+            'so_nha' => 'So Nha',
+            'ten_duong' => 'Ten Duong',
+            'ten_phuong' => 'Ten Phuong',
+            'von_dieule' => 'Von Dieule',
+            'dien_thoai' => 'Dien Thoai',
+            'nguoi_daidien' => 'Nguoi Daidien',
+            'nganh_kd' => 'Nganh Kd',
+            'ngaycap_giayphep' => 'Ngaycap Giayphep',
+            'ngay_thaydoi' => 'Ngay Thaydoi',
             'so_laodong' => 'So Laodong',
             'geom' => 'Geom',
-            'ma_nganh' => 'Mã ngành',
-            'ghi_chu' => 'Ghi chú',
-            'ma_dn' => 'Mã doanh nghiệp',
+            'ma_nganh' => 'Ma Nganh',
+            'so_giayphep' => 'So Giayphep',
+            'tinhtrang_hd' => 'Tinhtrang Hd',
+            'tinhtrang_thue' => 'Tinhtrang Thue',
+            'phuong_rasoat' => 'Phuong Rasoat',
+            'linhvuc_id' => 'Linhvuc ID',
+            'gioi_tinh' => 'Gioi Tinh',
+            'ngay_sinh' => 'Ngay Sinh',
+            'so_cmnd' => 'So Cmnd',
+            'dan_toc' => 'Dan Toc',
+            'quoc_tich' => 'Quoc Tich',
+            'thanh_vien' => 'Thanh Vien',
+            'quanly_thue' => 'Quanly Thue',
+            'loaihinh_kinhte' => 'Loaihinh Kinhte',
+            'ten_loaihinh' => 'Ten Loaihinh',
+            'ten_loai' => 'Ten Loai',
+            'ten_linhvuc' => 'Ten Linhvuc',
+            'geo_x' => 'Geo X',
+            'geo_y' => 'Geo Y',
         ];
     }
-      public static function primaryKey() {
+     public static function primaryKey() {
         return ['id_doanhnghiep']; // TODO: Change the autogenerated stub
     }
-
 }

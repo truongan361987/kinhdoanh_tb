@@ -29,21 +29,17 @@ use Yii;
  * @property string $ten_duong
  * @property string $ten_phuong
  * @property string $vi_tri
- * @property string $giayphep_so
+ * @property string $so_giayphep
  * @property string $geom
- * @property string $giayphep_ngay
+ * @property string $ngaycap_giayphep
  * @property string $ghi_chu
  * @property string $ma_thue
  * @property string $ma_nganh
- * @property string $nam_sinh
  * @property integer $loaicuahang_id
- * @property string $nam_hd
- * @property string $tinh_trang
- * @property string $tinhtrang_gp
- * @property string $kehoach_bienphap
- * @property string $doituong_didoi
- * @property string $dien_tich
- * @property string $ten_loai
+ * @property string $so_laodong
+ * @property string $linh_vuc
+ * @property integer $linhvuc_id
+ * @property string $ten_linhvuc
  * @property double $geo_x
  * @property double $geo_y
  */
@@ -63,12 +59,12 @@ class VHokinhdoanh extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_hkd', 'gioi_tinh', 'loaicuahang_id'], 'integer'],
-            [['ten_hkd', 'dien_thoai', 'fax', 'email', 'nganh_kd', 'website', 'nguoi_daidien', 'dan_toc', 'quoc_tich', 'so_cmnd', 'noi_cap', 'hokhau_thuongtru', 'noisong_hientai', 'so_nha', 'ten_duong', 'ten_phuong', 'vi_tri', 'giayphep_so', 'geom', 'ghi_chu', 'ma_thue', 'nam_sinh', 'nam_hd', 'tinh_trang', 'tinhtrang_gp', 'kehoach_bienphap', 'doituong_didoi'], 'string'],
-            [['von_kd', 'dien_tich', 'geo_x', 'geo_y'], 'number'],
-            [['ngay_sinh', 'ngay_cap', 'giayphep_ngay'], 'safe'],
+            [['id_hkd', 'gioi_tinh', 'loaicuahang_id', 'linhvuc_id'], 'integer'],
+            [['ten_hkd', 'dien_thoai', 'fax', 'email', 'nganh_kd', 'website', 'nguoi_daidien', 'dan_toc', 'quoc_tich', 'so_cmnd', 'noi_cap', 'hokhau_thuongtru', 'noisong_hientai', 'so_nha', 'ten_duong', 'ten_phuong', 'vi_tri', 'so_giayphep', 'geom', 'ghi_chu', 'ma_thue', 'so_laodong', 'linh_vuc','tinhtrang_hd'], 'string'],
+            [['von_kd', 'geo_x', 'geo_y'], 'number'],
+            [['ngay_sinh', 'ngay_cap', 'ngaycap_giayphep'], 'safe'],
             [['ma_nganh'], 'string', 'max' => 100],
-            [['ten_loai'], 'string', 'max' => 200],
+            [['ten_linhvuc'], 'string', 'max' => 200],
         ];
     }
 
@@ -78,43 +74,40 @@ class VHokinhdoanh extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-          'id_hkd' => 'Id Hkd',
-            'ten_hkd' => 'Tên hộ kinh doanh',
-            'dien_thoai' => 'Số diện thoại',
-            'fax' => 'Số Fax',
+            'id_hkd' => 'Id Hkd',
+            'ten_hkd' => 'Ten Hkd',
+            'dien_thoai' => 'Dien Thoai',
+            'fax' => 'Fax',
             'email' => 'Email',
-            'nganh_kd' => 'Ngành, nghề kinh doanh',
+            'nganh_kd' => 'Nganh Kd',
             'website' => 'Website',
-            'von_kd' => 'Vốn kinh doanh',
-            'nguoi_daidien' => 'Người đại diện',
-            'dan_toc' => 'Dân tộc',
-            'ngay_sinh' => 'Ngày sinh',
-            'gioi_tinh' => 'Giới tính',
-            'quoc_tich' => 'Quốc tịch',
-            'so_cmnd' => 'Số chứng minh nhân dân',
-            'ngay_cap' => 'Ngày cấp CMND',
-            'noi_cap' => 'Nơi cấp CMND',
-            'hokhau_thuongtru' => 'Hộ khẩu thường trú',
-            'noisong_hientai' => 'Chổ ở hiện tại',
-            'so_nha' => 'Số nhà',
-            'ten_duong' => 'Tên đường',
-            'ten_phuong' => 'Tên phường',
-            'vi_tri' => 'Vị trí gian hàng',
-            'giayphep_so' => 'Số giấy phép ĐKKD',
-            'geom' => 'Toạ độ',
-            'giayphep_ngay' => 'Ngày đăng ký giấy phép',
-            'ghi_chu' => 'Ghi chú',
-            'ma_thue' => 'Mã số thuế',
-            'ma_nganh' => 'Mã ngành',
-            'nam_sinh' => 'Nam Sinh',
+            'von_kd' => 'Von Kd',
+            'nguoi_daidien' => 'Nguoi Daidien',
+            'dan_toc' => 'Dan Toc',
+            'ngay_sinh' => 'Ngay Sinh',
+            'gioi_tinh' => 'Gioi Tinh',
+            'quoc_tich' => 'Quoc Tich',
+            'so_cmnd' => 'So Cmnd',
+            'ngay_cap' => 'Ngay Cap',
+            'noi_cap' => 'Noi Cap',
+            'hokhau_thuongtru' => 'Hokhau Thuongtru',
+            'noisong_hientai' => 'Noisong Hientai',
+            'so_nha' => 'So Nha',
+            'ten_duong' => 'Ten Duong',
+            'ten_phuong' => 'Ten Phuong',
+            'vi_tri' => 'Vi Tri',
+            'so_giayphep' => 'So Giayphep',
+            'geom' => 'Geom',
+            'ngaycap_giayphep' => 'Ngaycap Giayphep',
+            'ghi_chu' => 'Ghi Chu',
+            'ma_thue' => 'Ma Thue',
+            'ma_nganh' => 'Ma Nganh',
             'loaicuahang_id' => 'Loaicuahang ID',
-            'nam_hd' => 'Năm hoạt động',
-            'tinh_trang' => 'Tình trạng hoạt động',
-            'tinhtrang_gp' => 'Tình trạng giấp phép',
-            'kehoach_bienphap' => 'Kế hoạch biện pháp',
-            'doituong_didoi' => 'Đối tượng di dời',
-            'dien_tich' => 'Diện tích kinh doanh',
-            'ten_loai' => 'Ten Loai',
+            'so_laodong' => 'So Laodong',
+            'linh_vuc' => 'Linh Vuc',
+            'linhvuc_id' => 'Linhvuc ID',
+            'ten_linhvuc' => 'Ten Linhvuc',
+            'tinhtrang_hd' => 'Tinhtrang hd',
             'geo_x' => 'Geo X',
             'geo_y' => 'Geo Y',
         ];

@@ -17,7 +17,7 @@ AppAssetLogin::register($this);
         <meta charset="<?= Yii::$app->charset ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?= Html::csrfMetaTags() ?>
-        <title>Quản lý kinh doanh quận Bình Tân</title>
+        <title>Quản lý kinh doanh quận 4</title>
         <?php $this->head() ?>
     </head>
     <body class="login">

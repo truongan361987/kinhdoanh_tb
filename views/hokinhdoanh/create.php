@@ -11,7 +11,7 @@ use yii\widgets\MaskedInput;
 $urlMN = Url::to(['hokinhdoanh/get']);
 ?>
 <style>
-   
+
     fieldset {
         padding: 1em;
         font:100%/1 sans-serif;
@@ -55,144 +55,113 @@ $form = ActiveForm::begin([
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="thongtinchung">
-                            <fieldset >
-                                <legend >Hộ kinh doanh</legend>
-                                <div class="col-sm-12">
-                                    <div class="col-sm-12" autofocus>
-                                        <?= $form->field($model['hokinhdoanh'], 'ten_hkd', ['inputOptions' => ['autofocus' => 'autofocus', 'class' => 'form-control']])->textInput(['maxlength' => true])->label('Tên Hộ kinh doanh') ?>
-                                    </div>
-                                </div>
-                                <div class="col-sm-12">
 
-                                    <div class="col-sm-3" no-padding-side>
-                                        <?=
-                                        $form->field($model['hokinhdoanh'], 'ma_nganh')->widget(Select2::classname(), [
-                                            'options' => ['placeholder' => 'Chọn mã ngành'],
-                                            'pluginOptions' => [
-                                                'allowClear' => true,
-                                                'language' => [
-                                                    'errorLoading' => new JsExpression("function () { return 'Waiting for results...'; }"),
-                                                ],
-                                                'ajax' => [
-                                                    'url' => $urlMN,
-                                                    'dataType' => 'json',
-                                                    'data' => new JsExpression('function(params) { return {q:params.term}; }'),
-                                                //'delay' => 1000,
-                                                ],
-                                                'escapeMarkup' => new JsExpression('function (markup) { return markup; }'),
-                                                'templateSelection' => new JsExpression('function(donvi) { return donvi.text; }'),
-                                                'templateResult' => new JsExpression('function(donvi) { return donvi.text; }'),
+                            <div class="col-sm-12">
+                                <div class="col-sm-12" autofocus>
+                                    <?= $form->field($model['hokinhdoanh'], 'ten_hkd', ['inputOptions' => ['autofocus' => 'autofocus', 'class' => 'form-control']])->textInput(['maxlength' => true])->label('Tên Hộ kinh doanh') ?>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+
+                                <div class="col-sm-3" no-padding-side>
+                                    <?=
+                                    $form->field($model['hokinhdoanh'], 'ma_nganh')->widget(Select2::classname(), [
+                                        'options' => ['placeholder' => 'Chọn mã ngành'],
+                                        'pluginOptions' => [
+                                            'allowClear' => true,
+                                            'language' => [
+                                                'errorLoading' => new JsExpression("function () { return 'Waiting for results...'; }"),
+                                            ],
+                                            'ajax' => [
+                                                'url' => $urlMN,
+                                                'dataType' => 'json',
+                                                'data' => new JsExpression('function(params) { return {q:params.term}; }'),
+                                            //'delay' => 1000,
+                                            ],
+                                            'escapeMarkup' => new JsExpression('function (markup) { return markup; }'),
+                                            'templateSelection' => new JsExpression('function(donvi) { return donvi.text; }'),
+                                            'templateResult' => new JsExpression('function(donvi) { return donvi.text; }'),
 //
-                                            ],
-                                        ])->label('Mã ngành')
-                                        ?>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <?= $form->field($model['hokinhdoanh'], 'loaicuahang_id')->dropDownList(ArrayHelper::map($model['loaicuahang'], 'id_loaicuahang', 'ten_loai'))->label('Loại cửa hàng') ?>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <?= $form->field($model['hokinhdoanh'], 'giayphep_so')->textInput(['maxlength' => true])->label('Số giấy phép') ?>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <?=
-                                        $form->field($model['hokinhdoanh'], 'giayphep_ngay')->widget(DatePicker::classname(), [
-                                            'options' => ['placeholder' => 'Ngày cấp ...'],
-                                            'pluginOptions' => [
-                                                'autoclose' => true,
-                                                'format' => 'dd-mm-yyyy'
-                                            ]
-                                        ])->label('Ngày cấp');
-                                        ?>                            
-                                    </div>
-                              
+                                        ],
+                                    ])->label('Mã ngành')
+                                    ?>
+                                </div>
+                                <div class="col-sm-3">
+                                    <?= $form->field($model['hokinhdoanh'], 'linhvuc_id')->dropDownList(ArrayHelper::map($model['linhvuc'], 'id_linhvuc', 'ten_linhvuc'), ['prompt' => 'Chọn lĩnh vực'])->label('Lĩnh vực') ?>
+                                </div>
+                                <div class="col-sm-3">
+                                    <?= $form->field($model['hokinhdoanh'], 'so_giayphep')->textInput(['maxlength' => true])->label('Số giấy phép') ?>
+                                </div>
+                                <div class="col-sm-3">
+                                    <?=
+                                    $form->field($model['hokinhdoanh'], 'ngaycap_giayphep')->widget(DatePicker::classname(), [
+                                        'options' => ['placeholder' => 'Ngày cấp ...'],
+                                        'pluginOptions' => [
+                                            'autoclose' => true,
+                                            'format' => 'dd-mm-yyyy'
+                                        ]
+                                    ])->label('Ngày cấp');
+                                    ?>                            
                                 </div>
 
-                                <div class="col-sm-12">
-                                    <div class="col-sm-3">
-                                        <?= $form->field($model['hokinhdoanh'], 'vi_tri')->textInput(['maxlength' => true])->label('Vị trí gian hàng') ?>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <?= $form->field($model['hokinhdoanh'], 'so_nha')->textInput(['maxlength' => true])->label('Số nhà') ?>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <?= $form->field($model['hokinhdoanh'], 'ten_duong')->textInput(['maxlength' => true])->label('Tên đường') ?>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <?= $form->field($model['hokinhdoanh'], 'ten_phuong')->dropDownList(ArrayHelper::map($model['ranhphuong'], 'tenphuong', 'tenphuong'))->label('Tên phường') ?>
-                                    </div>
+                            </div>
 
+                            <div class="col-sm-12">
+                                <div class="col-sm-3">
+                                    <?= $form->field($model['hokinhdoanh'], 'vi_tri')->textInput(['maxlength' => true])->label('Vị trí gian hàng') ?>
                                 </div>
-                                <div class="col-sm-12">
-                                    <div class="col-sm-3">
-                                        <?= $form->field($model['hokinhdoanh'], 'dien_thoai')->textInput(['maxlength' => true])->label('Điện thoại') ?>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <?= $form->field($model['hokinhdoanh'], 'fax')->textInput(['maxlength' => true])->label('Số FAX') ?>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <?=
-                                        $form->field($model['hokinhdoanh'], 'email'
-                                        )->textInput(['placeholder' => 'Nhập chính xác địa chỉ email']);
-                                        ?>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <?= $form->field($model['hokinhdoanh'], 'website')->textInput(['maxlength' => true])->label('Website') ?>
-                                    </div>
+                                <div class="col-sm-3">
+                                    <?= $form->field($model['hokinhdoanh'], 'so_nha')->textInput(['maxlength' => true])->label('Số nhà') ?>
                                 </div>
-                                <div class="col-sm-12">
-                                    <div class="col-sm-12">
-                                        <?= $form->field($model['hokinhdoanh'], 'nganh_kd')->textarea()->label('Ngành, nghề kinh doanh') ?>
-                                    </div>
+                                <div class="col-sm-3">
+                                    <?= $form->field($model['hokinhdoanh'], 'ten_duong')->textInput(['maxlength' => true])->label('Tên đường') ?>
                                 </div>
-                                <div class="col-sm-12">
-                                    <div class="col-sm-4">
-                                        <?= $form->field($model['hokinhdoanh'], 'von_kd')->widget(MaskedInput::className(), [
-                                            'options' => [
-                                                'class' => 'form-control'
-                                            ],
-                                            'clientOptions' => [
-                                                'alias' => 'decimal',
-                                                'groupSeparator' => '.',
-                                                'radixPoint' => ',',
-                                                'autoGroup' => true,
-                                                'removeMaskOnSubmit' => true
-                                            ],
-                                        ])->label('Vốn') ?>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <?=
-                                        $form->field($model['hokinhdoanh'], 'dien_tich')->widget(MaskedInput::className(), [
-                                            'options' => [
-                                                'class' => 'form-control'
-                                            ],
-                                            'clientOptions' => [
-                                                'alias' => 'decimal',
-                                                'groupSeparator' => '.',
-                                                'radixPoint' => ',',
-                                                'autoGroup' => true,
-                                                'removeMaskOnSubmit' => true
-                                            ],
-                                        ])->label('Diện tích kinh doanh')
-                                        ?>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <?= $form->field($model['hokinhdoanh'], 'nam_hd')->textInput(['maxlength' => true])->label('Năm bắt đầu hoạt động') ?>
-                                    </div>
-                                         
-                                    <div class="col-sm-4">
-                                        <?= $form->field($model['hokinhdoanh'], 'tinhtrang_gp')->textarea()->label('Tình trạng giấy phép') ?>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <?= $form->field($model['hokinhdoanh'], 'kehoach_bienphap')->textarea()->label('Kế hoạch biện pháp') ?>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <?= $form->field($model['hokinhdoanh'], 'doituong_didoi')->textarea()->label('Đối tượng di dời') ?>
-                                    </div>
+                                <div class="col-sm-3">
+                                    <?= $form->field($model['hokinhdoanh'], 'ten_phuong')->dropDownList(ArrayHelper::map($model['ranhphuong'], 'tenphuong', 'tenphuong'))->label('Tên phường') ?>
+                                </div>
 
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="col-sm-3">
+                                    <?= $form->field($model['hokinhdoanh'], 'dien_thoai')->textInput(['maxlength' => true])->label('Điện thoại') ?>
                                 </div>
-                               
-                            </fieldset>
-                       
+                                <div class="col-sm-3">
+                                    <?= $form->field($model['hokinhdoanh'], 'fax')->textInput(['maxlength' => true])->label('Số FAX') ?>
+                                </div>
+                                <div class="col-sm-3">
+                                    <?=
+                                    $form->field($model['hokinhdoanh'], 'email'
+                                    )->textInput(['placeholder' => 'Nhập chính xác địa chỉ email']);
+                                    ?>
+                                </div>
+                                <div class="col-sm-3">
+                                    <?= $form->field($model['hokinhdoanh'], 'website')->textInput(['maxlength' => true])->label('Website') ?>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="col-sm-12">
+                                    <?= $form->field($model['hokinhdoanh'], 'nganh_kd')->textarea()->label('Ngành, nghề kinh doanh') ?>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="col-sm-4">
+                                    <?=
+                                    $form->field($model['hokinhdoanh'], 'von_kd')->widget(MaskedInput::className(), [
+                                        'options' => [
+                                            'class' => 'form-control'
+                                        ],
+                                        'clientOptions' => [
+                                            'alias' => 'decimal',
+                                            'groupSeparator' => '.',
+                                            'radixPoint' => ',',
+                                            'autoGroup' => true,
+                                            'removeMaskOnSubmit' => true
+                                        ],
+                                    ])->label('Vốn')
+                                    ?>
+                                </div>
+                            </div>
+
                             <fieldset >
                                 <legend >Người đại diện</legend>
                                 <div class="col-sm-12">
@@ -253,12 +222,12 @@ $form = ActiveForm::begin([
                                     </div>
                                 </div>
                             </fieldset>
-                            
+
                             <fieldset >
                                 <legend >Tình trạng hoạt động</legend>
                                 <div class="col-sm-12">
                                     <div class="col-sm-6">
-                                        <?= $form->field($model['hokinhdoanh'], 'tinh_trang')->dropDownList(['Đang hoạt động' => 'Đang hoạt động', 'Tạm ngừng' => 'Tạm ngừng hoạt động'], ['prompt' => 'Chọn tình trạng'])->label('Tình trạng hoạt động') ?>
+                                        <?= $form->field($model['hokinhdoanh'], 'tinhtrang_hd')->dropDownList(['Đang hoạt động' => 'Đang hoạt động', 'Tạm ngừng hoạt động' => 'Tạm ngừng hoạt động', 'Đã giải thể' => 'Đã giải thể'], ['prompt' => 'Chọn tình trạng'])->label('Tình trạng hoạt động') ?>
                                     </div>
                                 </div>
                             </fieldset>

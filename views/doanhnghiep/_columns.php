@@ -22,10 +22,10 @@ return [
             ],
             [
                 'class' => '\kartik\grid\DataColumn',
-                'attribute' => 'ma_dn',
+                'attribute' => 'so_giayphep',
                 'format' => 'raw',
                 'value' => function($model) {
-                    return $model->ma_dn . '<br>' . (($model->ngay_cap != null) ? date('d-m-Y', strtotime($model->ngay_cap)) : '');
+                    return $model->so_giayphep . '<br>' . (($model->ngaycap_giayphep != null) ? date('d-m-Y', strtotime($model->ngaycap_giayphep)) : '');
                 }
             ],
             [
@@ -91,7 +91,7 @@ return [
             // ],
             // [
             // 'class'=>'\kartik\grid\DataColumn',
-            // 'attribute'=>'ngay_cap',
+            // 'attribute'=>'ngaycap_giayphep',
             // ],
             // [
             // 'class'=>'\kartik\grid\DataColumn',

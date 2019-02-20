@@ -21,21 +21,21 @@ return [
             ],
             [
                 'class' => '\kartik\grid\DataColumn',
-                'attribute' => 'loaicuahang_id',
-                'label' => 'Loại cửa hàng',
+                'attribute' => 'linhvuc_id',
+                'label' => 'Lĩnh vực',
                 'format' => 'html',
                 'value' => function($model) {
-                    return $model->ten_loai;
+                    return $model->ten_linhvuc;
                 },
-                'filter' => ArrayHelper::map(DmLoaicuahang::find()->all(), 'id_loaicuahang', 'ten_loai')
+                'filter' => ArrayHelper::map(app\models\DmLinhvuc::find()->all(), 'id_linhvuc', 'ten_linhvuc')
             ],
             [
                 'class' => '\kartik\grid\DataColumn',
-                'attribute' => 'giayphep_so',
+                'attribute' => 'so_giayphep',
                 'label' => 'Giấy phép',
                 'format' => 'raw',
                 'value' => function($model) {
-                    return $model->giayphep_so . '<br>' . (($model->giayphep_ngay != null) ? date('d-m-Y', strtotime($model->giayphep_ngay)) : '');
+                    return $model->so_giayphep . '<br>' . (($model->ngaycap_giayphep != null) ? date('d-m-Y', strtotime($model->ngaycap_giayphep)) : '');
                 }
             ],
             [
@@ -121,7 +121,7 @@ return [
             // ],
             // [
             // 'class'=>'\kartik\grid\DataColumn',
-            // 'attribute'=>'giayphep_so',
+            // 'attribute'=>'so_giayphep',
             // ],
             // [
             // 'class'=>'\kartik\grid\DataColumn',
@@ -141,7 +141,7 @@ return [
             // ],
             // [
             // 'class'=>'\kartik\grid\DataColumn',
-            // 'attribute'=>'giayphep_ngay',
+            // 'attribute'=>'ngaycap_giayphep',
             // ],
             [
                 'class' => 'kartik\grid\ActionColumn',

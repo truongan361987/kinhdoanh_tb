@@ -103,16 +103,16 @@ $form = ActiveForm::begin([
                                         ?>
                                     </div>
                                     <div class="col-sm-3">
-                                        <?= $form->field($model['hokinhdoanh'], 'loaicuahang_id')->dropDownList(ArrayHelper::map($model['loaicuahang'], 'id_loaicuahang', 'ten_loai'))->label('Loại cửa hàng') ?>
+                                        <?= $form->field($model['hokinhdoanh'], 'linhvuc_id')->dropDownList(ArrayHelper::map($model['linhvuc'], 'id_linhvuc', 'ten_linhvuc'),['prompt' => 'Chọn linh vực'])->label('Lĩnh vực') ?>
                                     </div>
                                     <div class="col-sm-3">
-                                        <?= $form->field($model['hokinhdoanh'], 'giayphep_so')->textInput(['maxlength' => true])->label('Số giấy phép') ?>
+                                        <?= $form->field($model['hokinhdoanh'], 'so_giayphep')->textInput(['maxlength' => true])->label('Số giấy phép') ?>
                                     </div>
                                     <div class="col-sm-3">
                                         <?=
-                                        $form->field($model['hokinhdoanh'], 'giayphep_ngay')->widget(DatePicker::classname(), [
+                                        $form->field($model['hokinhdoanh'], 'ngaycap_giayphep')->widget(DatePicker::classname(), [
                                             'options' => ['placeholder' => 'Ngày cấp ...',
-                                                'value' => ($model['hokinhdoanh']->giayphep_ngay != null) ? date('d-m-Y', strtotime($model['hokinhdoanh']->giayphep_ngay)) : '',],
+                                                'value' => ($model['hokinhdoanh']->ngaycap_giayphep != null) ? date('d-m-Y', strtotime($model['hokinhdoanh']->ngaycap_giayphep)) : '',],
                                             'pluginOptions' => [
                                                 'autoclose' => true,
                                                 'format' => 'dd-mm-yyyy'
@@ -175,34 +175,8 @@ $form = ActiveForm::begin([
                                             ],
                                         ])->label('Vốn') ?>
                                     </div>
-                                    <div class="col-sm-4">
-                                        <?=
-                                        $form->field($model['hokinhdoanh'], 'dien_tich')->widget(MaskedInput::className(), [
-                                            'options' => [
-                                                'class' => 'form-control'
-                                            ],
-                                            'clientOptions' => [
-                                                'alias' => 'decimal',
-                                                'groupSeparator' => '.',
-                                                'radixPoint' => ',',
-                                                'autoGroup' => true,
-                                                'removeMaskOnSubmit' => true
-                                            ],
-                                        ])->label('Diện tích kinh doanh')
-                                        ?>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <?= $form->field($model['hokinhdoanh'], 'nam_hd')->textInput(['maxlength' => true])->label('Năm bắt đầu hoạt động') ?>
-                                    </div>
-                                     <div class="col-sm-4">
-                                        <?= $form->field($model['hokinhdoanh'], 'tinhtrang_gp')->textarea()->label('Tình trạng giấy phép') ?>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <?= $form->field($model['hokinhdoanh'], 'kehoach_bienphap')->textarea()->label('Kế hoạch biện pháp') ?>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <?= $form->field($model['hokinhdoanh'], 'doituong_didoi')->textarea()->label('Đối tượng di dời') ?>
-                                    </div>
+                                  
+                                 
                                 </div>
                             </fieldset>
                                                  
@@ -264,11 +238,11 @@ $form = ActiveForm::begin([
                                     </div>
                                 </div>
                             </fieldset>
-                              <fieldset >
+                               <fieldset >
                                 <legend >Tình trạng hoạt động</legend>
                                 <div class="col-sm-12">
                                     <div class="col-sm-6">
-                                        <?= $form->field($model['hokinhdoanh'], 'tinh_trang')->dropDownList(['Đang hoạt động' => 'Đang hoạt động', 'Tạm ngừng' => 'Tạm ngừng hoạt động'], ['prompt' => 'Chọn tình trạng'])->label('Tình trạng hoạt động') ?>
+                                        <?= $form->field($model['hokinhdoanh'], 'tinhtrang_hd')->dropDownList(['Đang hoạt động' => 'Đang hoạt động', 'Tạm ngừng hoạt động' => 'Tạm ngừng hoạt động', 'Đã giải thể' => 'Đã giải thể'], ['prompt' => 'Chọn tình trạng'])->label('Tình trạng hoạt động') ?>
                                     </div>
                                 </div>
                             </fieldset>
@@ -326,8 +300,8 @@ $form = ActiveForm::begin([
        
     });
     var map;
-    map = L.map('capnhatvitri').setView([<?= ($model['toado']->geo_y != null) ? $model['toado']->geo_y : 10.7756587 ?>, <?= ($model['toado']->geo_x != null) ? $model['toado']->geo_x : 106.70042379999995 ?>], 18);
-    var marker = new L.marker([<?= ($model['toado']->geo_y != null) ? $model['toado']->geo_y : 10.7756587 ?>, <?= ($model['toado']->geo_x != null) ? $model['toado']->geo_x : 106.70042379999995 ?>], {draggable: 'true'});
+    map = L.map('capnhatvitri').setView([<?= ($model['toado']->geo_y != null) ? $model['toado']->geo_y : 10.759610 ?>, <?= ($model['toado']->geo_x != null) ? $model['toado']->geo_x : 106.704339 ?>], 18);
+    var marker = new L.marker([<?= ($model['toado']->geo_y != null) ? $model['toado']->geo_y : 10.759610 ?>, <?= ($model['toado']->geo_x != null) ? $model['toado']->geo_x : 106.704339 ?>], {draggable: 'true'});
 
 
     // OVERLAYS -----------------------------------------------------

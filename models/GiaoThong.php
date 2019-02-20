@@ -26,7 +26,7 @@ class GiaoThong extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['ten_duong'], 'string'],
+            [['tenduong'], 'string'],
         ];
     }
 

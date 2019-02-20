@@ -32,7 +32,7 @@
                 <div class="portlet-body">
                     <div id="geocomplete-wrapper">
                         <input class='form-control' id='geocomplete' placeholder="Nhập vào địa chỉ cần tìm">
-                     </div>
+                    </div>
                     <div id="map"></div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
         HomeUrl: "../",
         MapConfig: {
             mapId: "map",
-            defaultCenter: [10.765266023297716, 106.60385683178902],
+            defaultCenter: [10.759610, 106.704339],
             defaultZoom: 15,
             defaultConfig: {maxZoom: 22},
             baseLayers: ["Bản đồ Google", "HCMGIS", "Ảnh vệ tinh", "MapBox"],
@@ -84,51 +84,51 @@
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                     id: 'streets-v9',
                 }),
-                "RanhThua": L.tileLayer.wms('http://kinhdoanhbinhtan.hcmgis.vn/geo113/dbkinhdoanh_binhtan/wms?', {
-                    layers: 'dbkinhdoanh_binhtan:ranh_thua',
+                "RanhThua": L.tileLayer.wms('http://kinhdoanhq4.hcmgis.vn/geo113/dbkinhdoanh_q4/wms?', {
+                    layers: 'dbkinhdoanh_q4:ranh_thua',
                     transparent: true,
                     format: 'image/png8',
                     maxZoom: 24,
                     minZoom: 18,
                 }),
-                "Cơ sở giáo dục": L.tileLayer.wms('http://kinhdoanhbinhtan.hcmgis.vn/geo113/dbkinhdoanh_binhtan/wms?', {
-                    layers: 'dbkinhdoanh_binhtan:poi_coso_giaoduc',
+                "Cơ sở giáo dục": L.tileLayer.wms('http://kinhdoanhq4.hcmgis.vn/geo113/dbkinhdoanh_q4/wms?', {
+                    layers: 'dbkinhdoanh_q4:poi_coso_giaoduc',
                     transparent: true,
                     format: 'image/png8',
                     maxZoom: 24,
                 }),
-                "Cơ sở y tế": L.tileLayer.wms('http://kinhdoanhbinhtan.hcmgis.vn/geo113/dbkinhdoanh_binhtan/wms?', {
-                    layers: 'dbkinhdoanh_binhtan:poi_coso_yte',
+                "Cơ sở y tế": L.tileLayer.wms('http://kinhdoanhq4.hcmgis.vn/geo113/dbkinhdoanh_q4/wms?', {
+                    layers: 'dbkinhdoanh_q4:poi_coso_yte',
                     transparent: true,
                     format: 'image/png8',
                     maxZoom: 24,
                 }),
-                "Cơ sở tôn giáo": L.tileLayer.wms('http://kinhdoanhbinhtan.hcmgis.vn/geo113/dbkinhdoanh_binhtan/wms?', {
-                    layers: 'dbkinhdoanh_binhtan:poi_coso_tongiao',
+                "Cơ sở tôn giáo": L.tileLayer.wms('http://kinhdoanhq4.hcmgis.vn/geo113/dbkinhdoanh_q4/wms?', {
+                    layers: 'dbkinhdoanh_q4:poi_coso_tongiao',
                     transparent: true,
                     format: 'image/png8',
                     maxZoom: 24,
                 }),
-                "Cơ quan nhà nước": L.tileLayer.wms('http://kinhdoanhbinhtan.hcmgis.vn/geo113/dbkinhdoanh_binhtan/wms?', {
-                    layers: 'dbkinhdoanh_binhtan:poi_ubnd',
+                "Cơ quan nhà nước": L.tileLayer.wms('http://kinhdoanhq4.hcmgis.vn/geo113/dbkinhdoanh_q4/wms?', {
+                    layers: 'dbkinhdoanh_q4:poi_ubnd',
                     transparent: true,
                     format: 'image/png8',
                     maxZoom: 24,
                 }),
-                "Chợ": L.tileLayer.wms('http://kinhdoanhbinhtan.hcmgis.vn/geo113/dbkinhdoanh_binhtan/wms?', {
-                    layers: 'dbkinhdoanh_binhtan:poi_cho',
+                "Chợ": L.tileLayer.wms('http://kinhdoanhq4.hcmgis.vn/geo113/dbkinhdoanh_q4/wms?', {
+                    layers: 'dbkinhdoanh_q4:poi_cho',
                     transparent: true,
                     format: 'image/png8',
                     maxZoom: 24,
                 }),
-                "Trụ sở công an": L.tileLayer.wms('http://kinhdoanhbinhtan.hcmgis.vn/geo113/dbkinhdoanh_binhtan/wms?', {
-                    layers: 'dbkinhdoanh_binhtan:poi_congan',
+                "Trụ sở công an": L.tileLayer.wms('http://kinhdoanhq4.hcmgis.vn/geo113/dbkinhdoanh_q4/wms?', {
+                    layers: 'dbkinhdoanh_q4:poi_congan',
                     transparent: true,
                     format: 'image/png8',
                     maxZoom: 24,
                 }),
-                "Di tích lịch sử": L.tileLayer.wms('http://kinhdoanhbinhtan.hcmgis.vn/geo113/dbkinhdoanh_binhtan/wms?', {
-                    layers: 'dbkinhdoanh_binhtan:poi_ditich',
+                "Di tích lịch sử": L.tileLayer.wms('http://kinhdoanhq4.hcmgis.vn/geo113/dbkinhdoanh_q4/wms?', {
+                    layers: 'dbkinhdoanh_q4:poi_ditich',
                     transparent: true,
                     format: 'image/png8',
                     maxZoom: 24,
@@ -270,31 +270,14 @@
                             }
                         })
                     });
-                    if (data.loaicuahang_id === 2) {
-                        var divIcon = L.divIcon({
-                            iconSize: [40, 48],
-                            iconAnchor: [20, 48],
-                            popupAnchor: [0, -48],
-                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/fuel.png"></div>'
-                        });
-                        leafletMarker.setIcon(divIcon);
-                    } else if (data.loaicuahang_id === 3) {
-                        var divIcon = L.divIcon({
-                            iconSize: [40, 48],
-                            iconAnchor: [20, 48],
-                            popupAnchor: [0, -48],
-                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/gas.png"></div>'
-                        });
-                        leafletMarker.setIcon(divIcon);
-                    } else if (data.loaicuahang_id === 1) {
-                        var divIcon = L.divIcon({
-                            iconSize: [40, 48],
-                            iconAnchor: [20, 48],
-                            popupAnchor: [0, -48],
-                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/flask.png"></div>'
-                        });
-                        leafletMarker.setIcon(divIcon);
-                    }
+
+                    var divIcon = L.divIcon({
+                        iconSize: [40, 48],
+                        iconAnchor: [20, 48],
+                        popupAnchor: [0, -48],
+                        html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/warehouse.png"></div>'
+                    });
+                    leafletMarker.setIcon(divIcon);
                     DATA.Refs.Markers[data.id] = leafletMarker;
                 }
             }

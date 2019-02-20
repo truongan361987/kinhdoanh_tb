@@ -25,59 +25,71 @@ use Yii;
  * @property string $ghi_chu
  * @property string $ma_dn
  */
-class DoanhNghiep extends \yii\db\ActiveRecord
-{
+class DoanhNghiep extends \yii\db\ActiveRecord {
+
     /**
      * @inheritdoc
      */
-    public static function tableName()
-    {
+    public static function tableName() {
         return 'doanh_nghiep';
     }
 
     /**
      * @inheritdoc
      */
-    public function rules()
-    {
+    public function rules() {
         return [
-            [['loaihinhdn_id'], 'integer'],
-            [['von_dieule'], 'match', 'pattern'=>'/^([0-9.,])+$/'],
-            [['ngay_cap', 'ngay_thaydoi'], 'safe'],
-            [['geom', 'ghi_chu'], 'string'],
-            [['ten_dn', 'nganh_kd'], 'string', 'max' => 300],
-            [['so_nha', 'ten_duong', 'ten_phuong', 'dien_thoai', 'nguoi_daidien', 'so_laodong', 'ma_nganh'], 'string', 'max' => 100],
-            [['ma_dn'], 'string', 'max' => 50],
+            [['loaihinhdn_id', 'linhvuc_id'], 'integer'],
+            [['von_dieule'], 'match', 'pattern' => '/^([0-9.,])+$/'],
+            [['ngay_thaydoi', 'ngay_sinh', 'ngaycap_giayphep'], 'safe'],
+            [['geom', 'ghi_chu', 'tinhtrang_hd', 'tinhtrang_thue', 'phuong_rasoat', 'nganh_kd', 'thanh_vien', 'quanly_thue'], 'string'],
+            [['ten_dn', 'nganh_kd'], 'string', 'max' => 500],
+            [['so_nha', 'ten_duong', 'ten_phuong', 'dien_thoai', 'nguoi_daidien', 'so_laodong', 'ma_nganh', 'dan_toc', 'quoc_tich'], 'string', 'max' => 500],
+            [['so_giayphep'], 'string', 'max' => 150],
         ];
     }
 
     /**
      * @inheritdoc
      */
-    public function attributeLabels()
-    {
+    public function attributeLabels() {
         return [
             'id_doanhnghiep' => 'Id Doanhnghiep',
-            'ten_dn' => 'Tên doanh nghiệp',
+            'ten_dn' => 'Ten Dn',
             'loaihinhdn_id' => 'Loaihinhdn ID',
-            'so_nha' => 'Số nhà',
-            'ten_duong' => 'Tên đường',
-            'ten_phuong' => 'Tên Phường',
-            'von_dieule' => 'Vốn điều lệ',
-            'dien_thoai' => 'Điện thoại',
-            'nguoi_daidien' => 'Người đại diện',
-            'nganh_kd' => 'Ngành nghề KD',
-            'ngay_cap' => 'Ngày cấp',
-            'ngay_thaydoi' => 'Ngày thay đổi',
+            'so_nha' => 'So Nha',
+            'ten_duong' => 'Ten Duong',
+            'ten_phuong' => 'Ten Phuong',
+            'von_dieule' => 'Von Dieule',
+            'dien_thoai' => 'Dien Thoai',
+            'nguoi_daidien' => 'Nguoi Daidien',
+            'nganh_kd' => 'Nganh Kd',
+            'ngaycap_giayphep' => 'Ngaycap Giayphep',
+            'ngay_thaydoi' => 'Ngay Thaydoi',
             'so_laodong' => 'So Laodong',
             'geom' => 'Geom',
-            'ma_nganh' => 'Mã ngành',
+            'ma_nganh' => 'Ma Nganh',
+            'so_giayphep' => 'So Giayphep',
+            'tinhtrang_hd' => 'Tinhtrang Hd',
+            'tinhtrang_thue' => 'Tinhtrang Thue',
+            'phuong_rasoat' => 'Phuong Rasoat',
+            'linhvuc_id' => 'Linhvuc ID',
+            'gioi_tinh' => 'Gioi Tinh',
+            'ngay_sinh' => 'Ngay Sinh',
+            'so_cmnd' => 'So Cmnd',
+            'dan_toc' => 'Dan Toc',
+            'quoc_tich' => 'Quoc Tich',
+            'thanh_vien' => 'Thanh Vien',
+            'quanly_thue' => 'Quanly Thue',
+            'loaihinh_kinhte' => 'Loaihinh Kinhte',
+            'ten_loaihinh' => 'Ten Loaihinh',
             'ghi_chu' => 'Ghi chú',
-            'ma_dn' => 'Mã doanh nghiệp',
         ];
     }
-      public function beforeValidate() {
+
+    public function beforeValidate() {
         $this->von_dieule = str_replace(",", ".", $this->von_dieule);
         return true;
     }
+
 }

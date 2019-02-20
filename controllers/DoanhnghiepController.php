@@ -2,8 +2,11 @@
 
 namespace app\controllers;
 
+use app\models\DmDanToc;
+use app\models\DmLinhvuc;
 use app\models\DmLoaihinhdn;
 use app\models\DmManganh;
+use app\models\DmQuocTich;
 use app\models\DoanhNghiep;
 use app\models\DoanhNghiepSearch;
 use app\models\GiaoThong;
@@ -40,7 +43,7 @@ class DoanhnghiepController extends Controller {
         $model['dmmanganh'] = DmMaNganh::find()->orderBy('ten_nganh')->all();
         $model['ranhphuong'] = RanhPhuong::find()->orderBy('tenphuong')->all();
         $model['loaihinhdn'] = DmLoaihinhdn::find()->orderBy('id_loaihinhdn')->all();
-        $model['giaothong'] = GiaoThong::find()->orderBy('ten_duong')->distinct()->all();
+        $model['giaothong'] = GiaoThong::find()->orderBy('tenduong')->distinct()->all();
         $model['search'] = new DoanhNghiepSearch();
         if ($request->isGet && $request->queryParams != null) {
             $params['DoanhNghiepSearch'] = $request->queryParams;
@@ -131,15 +134,18 @@ class DoanhnghiepController extends Controller {
         $request = Yii::$app->request;
         $model['doanhnghiep'] = new DoanhNghiep();
         $model['dmmanganh'] = DmMaNganh::find()->orderBy('ten_nganh')->all();
+        $model['linhvuc'] = DmLinhvuc::find()->orderBy('id_linhvuc')->all();
         $model['loaihinhdn'] = DmLoaihinhdn::find()->orderBy('id_loaihinhdn')->all();
         $model['ranhphuong'] = RanhPhuong::find()->orderBy('tenphuong')->all();
-        $model['giaothong'] = GiaoThong::find()->orderBy('ten_duong')->distinct()->all();
+        $model['giaothong'] = GiaoThong::find()->orderBy('tenduong')->distinct()->all();
+        $model['dmdantoc'] = DmDanToc::find()->orderBy('ten_dantoc')->all();
+        $model['dmquoctich'] = DmQuocTich::find()->orderBy('ten_quoctich')->all();
         if ($model['doanhnghiep']->load($request->post())) {
             if ($model['doanhnghiep']->ngay_thaydoi != null) {
                 $model['doanhnghiep']->ngay_thaydoi = date('Y-m-d', strtotime($model['doanhnghiep']->ngay_thaydoi));
             }
-            if ($model['doanhnghiep']->ngay_cap != null) {
-                $model['doanhnghiep']->ngay_cap = date('Y-m-d', strtotime($model['doanhnghiep']->ngay_cap));
+            if ($model['doanhnghiep']->ngaycap_giayphep != null) {
+                $model['doanhnghiep']->ngaycap_giayphep = date('Y-m-d', strtotime($model['doanhnghiep']->ngaycap_giayphep));
             }
             $model['doanhnghiep']->save();
             UtilityService::alert('hkd_create_success');
@@ -164,15 +170,18 @@ class DoanhnghiepController extends Controller {
         $model['doanhnghiep'] = $this->findModel($id);
         $model['toado'] = $this->findVModel($id);
         $model['dmmanganh'] = DmManganh::find()->orderBy('ten_nganh')->all();
+        $model['linhvuc'] = DmLinhvuc::find()->orderBy('id_linhvuc')->all();
         $model['loaihinhdn'] = DmLoaihinhdn::find()->orderBy('id_loaihinhdn')->all();
         $model['ranhphuong'] = RanhPhuong::find()->orderBy('tenphuong')->all();
-        $model['giaothong'] = GiaoThong::find()->orderBy('ten_duong')->distinct()->all();
+        $model['giaothong'] = GiaoThong::find()->orderBy('tenduong')->distinct()->all();
+        $model['dmdantoc'] = DmDanToc::find()->orderBy('ten_dantoc')->all();
+        $model['dmquoctich'] = DmQuocTich::find()->orderBy('ten_quoctich')->all();
         if ($model['doanhnghiep']->load($request->post())) {
             if ($model['doanhnghiep']->ngay_thaydoi != null) {
                 $model['doanhnghiep']->ngay_thaydoi = date('Y-m-d', strtotime($model['doanhnghiep']->ngay_thaydoi));
             }
-            if ($model['doanhnghiep']->ngay_cap != null) {
-                $model['doanhnghiep']->ngay_cap = date('Y-m-d', strtotime($model['doanhnghiep']->ngay_cap));
+            if ($model['doanhnghiep']->ngaycap_giayphep != null) {
+                $model['doanhnghiep']->ngaycap_giayphep = date('Y-m-d', strtotime($model['doanhnghiep']->ngaycap_giayphep));
             }
             if ($post['ToaDo']['geo_x'] != null && $post['ToaDo']['geo_y'] != null) {
                 $query = "update doanh_nghiep set geom = ST_GeomFromText('POINT(" . $post['ToaDo']['geo_x'] . " " . $post['ToaDo']['geo_y'] . ")') where id_doanhnghiep = " . $model['doanhnghiep']->id_doanhnghiep;

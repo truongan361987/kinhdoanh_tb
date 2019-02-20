@@ -4,7 +4,7 @@ use kartik\form\ActiveForm;
 ?>
 <!-- BEGIN LOGO -->
 <div class="logo">
-    <h2 class="font-white"><b>HỆ THỐNG QUẢN LÝ KINH DOANH QUẬN BÌNH TÂN</b></h2>
+    <h2 class="font-white"><b>HỆ THỐNG QUẢN LÝ KINH DOANH QUẬN 4</b></h2>
 </div>
 <!-- END LOGO -->
 <!-- BEGIN LOGIN -->

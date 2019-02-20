@@ -71,9 +71,10 @@ use yii\widgets\DetailView;
                                             'value' => (($model['hokinhdoanh']->vi_tri == NULL) ? '' : $model['hokinhdoanh']->vi_tri . ', ') . (($model['hokinhdoanh']->so_nha == NULL) ? '' : $model['hokinhdoanh']->so_nha . ', ') . (($model['hokinhdoanh']->ten_duong == NULL) ? '' : $model['hokinhdoanh']->ten_duong . ', ') . (($model['hokinhdoanh']->ten_phuong == NULL) ? '' : $model['hokinhdoanh']->ten_phuong),
                                         ],
                                         'ma_nganh',
-                                        'giayphep_so',
+                                        'ten_linhvuc',
+                                        'so_giayphep',
                                         [
-                                            'attribute' => 'giayphep_ngay',
+                                            'attribute' => 'ngaycap_giayphep',
                                             'format' => ['date', 'php:d-m-Y'],
                                         ],
                                         'dien_thoai',
@@ -103,6 +104,7 @@ use yii\widgets\DetailView;
                                         ],
                                         'hokhau_thuongtru',
                                         'noisong_hientai',
+                                        'tinhtrang_hd'
                                     ],
                                 ])
                                 ?>
@@ -163,7 +165,7 @@ use yii\widgets\DetailView;
     });
     var map;
     map = L.map('capnhatvitri').setView([<?= ($model['hokinhdoanh']->geo_y != null) ? $model['hokinhdoanh']->geo_y : 10.7756587 ?>, <?= ($model['hokinhdoanh']->geo_x != null) ? $model['hokinhdoanh']->geo_x : 106.70042379999995 ?>], 18);
-    var marker = new L.marker([<?= ($model['hokinhdoanh']->geo_y != null) ? $model['hokinhdoanh']->geo_y : 10.7756587 ?>, <?= ($model['hokinhdoanh']->geo_x != null) ? $model['hokinhdoanh']->geo_x : 106.70042379999995 ?>], {
+    var marker = new L.marker([<?= ($model['hokinhdoanh']->geo_y != null) ? $model['hokinhdoanh']->geo_y : 0 ?>, <?= ($model['hokinhdoanh']->geo_x != null) ? $model['hokinhdoanh']->geo_x : 0 ?>], {
         draggable: false
     })
             .addTo(map)
