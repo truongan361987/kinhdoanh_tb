@@ -58,7 +58,7 @@
                         <li><a data-toggle="tab" href="#tb" >Phường 8</a></li>
                         <li><a data-toggle="tab" href="#nl" >Phường 9</a></li>
                         <li><a data-toggle="tab" href="#td" >Phường 10</a></li>
-                        <li><a data-toggle="tab" href="#11" >Phường 11</a></li>
+                     
                         <li><a data-toggle="tab" href="#12" >Phường 12</a></li>
                         <li><a data-toggle="tab" href="#13" >Phường 13</a></li>
                         <li><a data-toggle="tab" href="#14" >Phường 14</a></li>
@@ -97,9 +97,7 @@
                         <div class="tab-pane " id="td">
                             <div id="tandinh" class="" style="height: 500px;width: 100%"></div>
                         </div>
-                        <div class="tab-pane " id="11">
-                            <div id="11" class="" style="height: 500px;width: 100%"></div>
-                        </div>
+                     
                         <div class="tab-pane " id="12">
                             <div id="12" class="" style="height: 500px;width: 100%"></div>
                         </div>
@@ -160,7 +158,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tkbennghe, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -203,7 +201,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tkbenthanh, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -246,7 +244,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tkcaukho, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -289,7 +287,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tkcaulanh, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -332,7 +330,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tkcogiang, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -375,7 +373,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tkdakao, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -418,7 +416,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tkcutrinh, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -461,7 +459,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tkthaibinh, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -504,7 +502,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tkngulao, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -547,7 +545,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tktandinh, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -555,49 +553,7 @@
             "enabled": true
         }
     });
-    var chart = AmCharts.makeChart("11", {
-        "type": "pie",
-        "theme": "light",
-        "legend": {
-            "position": "right",
-            "marginRight": 100,
-            "autoMargins": false
-        },
-        "innerRadius": "0%",
-        "defs": {
-            "filter": [{
-                    "id": "shadow",
-                    "width": "200%",
-                    "height": "200%",
-                    "feOffset": {
-                        "result": "offOut",
-                        "in": "SourceAlpha",
-                        "dx": 0,
-                        "dy": 0
-                    },
-                    "feGaussianBlur": {
-                        "result": "blurOut",
-                        "in": "offOut",
-                        "stdDeviation": 5
-                    },
-                    "feBlend": {
-                        "in": "SourceGraphic",
-                        "in2": "blurOut",
-                        "mode": "normal"
-                    }
-                }]
-        },
-        "labelsEnabled": false,
-        "dataProvider": <?= json_encode($tk11, JSON_UNESCAPED_UNICODE) ?>,
-        "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
-        "balloon": {
-            "fixedPosition": true
-        },
-        "export": {
-            "enabled": true
-        }
-    });
+  
     var chart = AmCharts.makeChart("12", {
         "type": "pie",
         "theme": "light",
@@ -633,7 +589,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tk12, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -676,7 +632,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tk13, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -719,7 +675,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tk14, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -762,7 +718,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tk15, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },
@@ -805,7 +761,7 @@
         "labelsEnabled": false,
         "dataProvider": <?= json_encode($tk17, JSON_UNESCAPED_UNICODE) ?>,
         "valueField": "sl_hokinhdoanh",
-        "titleField": "ten_loai",
+        "titleField": "ten_linhvuc",
         "balloon": {
             "fixedPosition": true
         },

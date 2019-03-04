@@ -72,7 +72,7 @@
             }],
         "startDuration": 1,
         "graphs": [{
-                "balloonText": "<b>[[ten_loai]]: [[sl_hokinhdoanh]]</b>",
+                "balloonText": "<b>[[ten_linhvuc]]: [[sl_hokinhdoanh]]</b>",
                 "fillColorsField": "color",
                 "fillAlphas": 0.9,
                 "lineAlpha": 0.2,
@@ -84,7 +84,7 @@
             "cursorAlpha": 0,
             "zoomable": false
         },
-        "categoryField": "ten_loai",
+        "categoryField": "ten_linhvuc",
         "categoryAxis": {
             "gridPosition": "start",
             "labelRotation": 45,
