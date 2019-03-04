@@ -257,9 +257,9 @@
                         })
                         this.openPopup();
                     });
-//                     leafletMarker.on('mouseout', function (e) {
-//                       this.closePopup();
-//                    });
+                     leafletMarker.on('mouseout', function (e) {
+                       this.closePopup();
+                    });
                     leafletMarker.on('click', function () {
                         var popupid = 'marker-popup-' + data.id;
                         //  mapZoomAndPanTo(data.geo_y, data.geo_x);
