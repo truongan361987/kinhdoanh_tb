@@ -64,21 +64,10 @@ use yii\widgets\DetailView;
                         </tr>
                         <tr>
                             <th>Tình trạng hoạt động</th>
-                            <td><?= ($model['hokinhdoanh']->tinh_trang == null) ? '(Chưa có)' : $model['hokinhdoanh']->tinh_trang?></td>
+                            <td><?= ($model['hokinhdoanh']->tinhtrang_hd == null) ? '(Chưa có)' : $model['hokinhdoanh']->tinhtrang_hd?></td>
                         </tr>
-                        <tr>
-                            <th>Giấy chứng nhận đủ điều kiện sản xuất, kinh doanh</th>
-                            <td><?= ($model['hokinhdoanh']->tinhtrang_gp == null) ? '' : $model['hokinhdoanh']->tinhtrang_gp?></td>
-                        </tr>
-                                             
-                        <tr>
-                            <th>Kế hoạch/Biện pháp phòng ngừa ứng phó sự cố hóa chất</th>
-                            <td colspan="3"><?= ($model['hokinhdoanh']->kehoach_bienphap == null) ? '(Chưa có)' : $model['hokinhdoanh']->kehoach_bienphap?></td>
-                        </tr>
-                        <tr>
-                            <th>Thuộc đối tượng di dời do nguy cơ cháy nổ cao,<br> không phù hợp quy hoạch</th>
-                            <td colspan="3"><?= ($model['hokinhdoanh']->doituong_didoi == null) ? '(Chưa có)' : $model['hokinhdoanh']->doituong_didoi?></td>
-                        </tr>
+                       
+                     
                      
                     </table>
                 </div>

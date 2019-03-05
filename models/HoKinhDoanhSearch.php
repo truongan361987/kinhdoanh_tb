@@ -21,7 +21,7 @@ class HoKinhDoanhSearch extends HoKinhDoanh {
 
     public function rules() {
         return [
-            [['id_hkd', 'von_kd', 'ma_nganh', 'gioi_tinh', 'loaicuahang_id'], 'integer'],
+            [['id_hkd', 'von_kd', 'ma_nganh', 'gioi_tinh', 'linhvuc_id'], 'integer'],
             [['tu_ngay', 'den_ngay'], 'safe'],
             [['ten_hkd', 'dien_thoai', 'fax', 'email', 'nganh_kd', 'website', 'nguoi_daidien', 'dan_toc', 'ngay_sinh', 'quoc_tich', 'so_cmnd', 'ngay_cap', 'noi_cap', 'hokhau_thuongtru', 'noisong_hientai', 'so_nha', 'ten_duong', 'ten_phuong', 'vi_tri', 'so_giayphep', 'ghi_chu', 'geom', 'ngaycap_giayphep'], 'safe'],
         ];
@@ -71,7 +71,7 @@ class HoKinhDoanhSearch extends HoKinhDoanh {
             'ngay_cap' => $this->ngay_cap,
             'ngaycap_giayphep' => $this->ngaycap_giayphep,
             'gioi_tinh' => $this->gioi_tinh,
-            'loaicuahang_id' => $this->loaicuahang_id,
+            'linhvuc_id' => $this->linhvuc_id,
         ]);
 
         $query->andFilterWhere(['like', 'upper(ten_hkd)', mb_strtoupper($this->ten_hkd)])

@@ -1,41 +1,4 @@
-.ch-list::-webkit-scrollbar {
-    width: 3px;
-    background-color: #F5F5F5;
-}
 
-.ch-list {
-    width: 100%;
-    overflow-x: hidden;
-    text-overflow: ellipsis;
-}
-
-.ch-item {
-    cursor: pointer;
-    font-size: 13px;
-    margin-bottom: 10px;
-    width: 100%;
-    overflow: hidden;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.062);
-}
-
-.ch-item:hover {
-    background: rgba(0, 0, 0, 0.068);
-}
-
-.ch-item .ten{
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #5b9bd1;
-}
-
-.ch-item .nganhnghe {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-.ch-list::-webkit-scrollbar {
-    width: 3px;
-    background-color: #F5F5F5;
-}
 .dn-list {
     width: 100%;
     overflow-x: hidden;
@@ -72,7 +35,7 @@
     margin-bottom: 10px;
     width: 100%;
     overflow: hidden;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.062);
+    border-bottom: solid 1px rgba(0, 0, 0, 0);
 }
 
 .hokd-item:hover {
@@ -88,6 +51,12 @@
 .hokd-item .nganhnghe {
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.hokd-item .linhvuc {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    font-style: italic;
 }
 .leaflet-popup-content {
     min-width: 300px !important;
