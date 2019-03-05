@@ -39,7 +39,7 @@
                 <ul class="nav nav-tabs">
                     <li class="active" ><a data-toggle="tab" href="#hokinhdoanh">Hộ kinh doanh</a></li>
                     <li ><a data-toggle="tab" href="#doanhnghiep">Doanh nghiệp</a></li>
-                 
+
                     <li ><a data-toggle="tab" href="#thongke">Thống kê</a></li>
                 </ul>
                 <div class="tab-content" style="padding:0px">
@@ -69,7 +69,7 @@
                             <div id='list_doanhnghiep'></div>
                         </div>
                     </div>
-                   
+
                     <div class="tab-pane " id="thongke">
                         <div class="portlet-body">
                             <div id='list_extend'></div>
@@ -90,8 +90,7 @@
 <script>
     var defined = {
         layer_hokindoanh: "Hộ kinh doanh",
-             layer_doanhnghiep: "Doanh nghiệp",
-   
+        layer_doanhnghiep: "Doanh nghiệp",
     };
     var DATA = {
         HomeUrl: "../",
@@ -150,7 +149,7 @@
         initMap();
         initListHokinhdoanh();
         initListDoanhnghiep()
-       
+
     })
 
     function initMap(config) {
@@ -254,15 +253,15 @@
                             }
                         })
                     });
-                      
-                        var divIcon = L.divIcon({
-                            iconSize: [40, 48],
-                            iconAnchor: [20, 48],
-                            popupAnchor: [0, -48],
-                            html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/warehouse.png"></div>'
-                        });
-                        leafletMarker.setIcon(divIcon);
-                        DATA.Refs.Markers[data.id] = leafletMarker;
+
+                    var divIcon = L.divIcon({
+                        iconSize: [40, 48],
+                        iconAnchor: [20, 48],
+                        popupAnchor: [0, -48],
+                        html: '<div style="background: white;width: 40px;height: 40px;border-radius: 100%;font-size: 26px;"><img src="' + DATA.HomeUrl + '/resources/img/warehouse.png"></div>'
+                    });
+                    leafletMarker.setIcon(divIcon);
+                    DATA.Refs.Markers[data.id] = leafletMarker;
                 }
             }
         });
@@ -299,6 +298,9 @@
                         })
                         this.openPopup();
                     });
+                    leafletMarker.on('mouseout', function (e) {
+                        this.closePopup();
+                    });
                     leafletMarker.on('click', function () {
                         var popupid = 'marker-popup-' + data.id;
                         //  mapZoomAndPanTo(data.geo_y, data.geo_x);
@@ -321,7 +323,7 @@
             }
         });
     }
-   
+
     function convertDataToHokihdoanhGeojson(list) {
         var geojson = [];
         list.map(function (item) {
@@ -356,7 +358,7 @@
         });
         return geojson;
     }
-  
+
 
     function initListHokinhdoanh() {
         loadAjaxToDivListHokinhdoanh(DATA.HomeUrl + '/bando/list-hokinhdoanh');
@@ -366,7 +368,7 @@
         loadAjaxToDivListDoanhnghiep(DATA.HomeUrl + '/bando/list-doanhnghiep');
         initSearchDn();
     }
-  
+
     function initPagAjaxDivListHokinhdoanh() {
         $('.pagination li a').on('click', function (e) {
             e.preventDefault();
@@ -385,7 +387,7 @@
             return false;
         });
     }
-  
+
 
     function initHokdClickEvent() {
         $('.hokd-item').on('click', function () {
@@ -393,17 +395,17 @@
             var x = _this.attr('data-point-x');
             var y = _this.attr('data-point-y');
             if (typeof (x) != 'undefined')
-                mapZoomAndPanTo(y, x,20);
+                mapZoomAndPanTo(y, x, 20);
         });
     }
- 
+
     function initDnClickEvent() {
         $('.dn-item').on('click', function () {
             var _this = $(this);
             var x = _this.attr('data-point-x');
             var y = _this.attr('data-point-y');
             if (typeof (x) != 'undefined')
-                mapZoomAndPanTo(y, x,20);
+                mapZoomAndPanTo(y, x, 20);
         });
     }
 
@@ -424,7 +426,7 @@
         DATA[config.mapId].MapControl.drawcontrol.addTo(DATA[config.mapId].Map);
         DATA[config.mapId].Map.on('draw:created', function (e) {
             DATA.MapLayer.drawlayer.clearLayers();
-                var type = e.layerType,
+            var type = e.layerType,
                     layer = e.layer;
             if (type === 'circle') {
                 var theCenterPt = layer.getLatLng();
@@ -479,7 +481,7 @@
             }
         })
     }
-   
+
 
     function loadAjaxToDivListHokinhdoanh(url) {
         var div = $('#list_hokinhdoanh');
@@ -503,7 +505,7 @@
             }
         });
     }
-   
+
 
     function HokinhdoanhView(id_hkd) {
         var url_cg = "<?= Yii::$app->homeUrl ?>hokinhdoanh/viewbando?id=" + id_hkd;
@@ -512,7 +514,7 @@
             //  $('#myModalLabel').empty().html(name);
         })
     }
- 
+
     function DoanhnghiepView(id_dn) {
         var url_cg = "<?= Yii::$app->homeUrl ?>doanhnghiep/viewbando?id=" + id_dn;
         $.get(url_cg, function (res) {
@@ -521,7 +523,7 @@
         })
     }
 
-     function initFocusCircleLayer(config) {
+    function initFocusCircleLayer(config) {
         DATA.MapLayer.focuscirclelayer = L.circleMarker([0, 0], {radius: 25, fillColor: "red",
             color: "#000",
             weight: 1,
@@ -537,17 +539,17 @@
             DATA.MapLayer.focuscirclelayer.zoomend = DATA[DATA.MapConfig.mapId].Map.getZoom();
             var diff = DATA.MapLayer.focuscirclelayer.zoomend - DATA.MapLayer.focuscirclelayer.zoomstart;
             if (diff > 0) {
-                DATA.MapLayer.focuscirclelayer.setRadius(DATA.MapLayer.focuscirclelayer.getRadius() * 2);
+                DATA.MapLayer.focuscirclelayer.setRadius(DATA.MapLayer.focuscirclelayer.getRadius());
             } else if (diff < 0) {
-                DATA.MapLayer.focuscirclelayer.setRadius(DATA.MapLayer.focuscirclelayer.getRadius() / 2);
+                DATA.MapLayer.focuscirclelayer.setRadius(DATA.MapLayer.focuscirclelayer.getRadius());
             }
 
-            DATA.Refs.LeafletLayers[defined.layer_hokindoanh].Cluster.Size = (DATA[DATA.MapConfig.mapId].Map.getZoom() >= 24) ? -1 : 100;
+            DATA.Refs.LeafletLayers[defined.layer_hokindoanh].Cluster.Size = 10;
             DATA.Refs.LeafletLayers[defined.layer_hokindoanh].ProcessView(); // looks like it works OK without this line
         });
     }
 
-     function mapZoomAndPanTo(x, y, zoom) {
+    function mapZoomAndPanTo(x, y, zoom) {
         DATA[DATA.MapConfig.mapId].Map.setView([x, y], zoom);
         DATA.MapLayer.focuscirclelayer.setLatLng([x, y]);
     }

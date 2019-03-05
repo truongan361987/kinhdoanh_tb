@@ -35,15 +35,15 @@ use yii\widgets\DetailView;
                             <th>Giấy phép số</th>
                             <td><?= $model['doanhnghiep']->so_giayphep ?></td>
                             <th>Ngày cấp</th>
-                            <td><?= ($model['doanhnghiep']->ngaycap_giayphep != null) ? date('d-m-Y', strtotime($model['doanhnghiep']->ngaycap_giayphep)) : '' ?></td>
+                            <td><?= ($model['doanhnghiep']->ngaycap_giayphep != null) ? date('d-m-Y', strtotime($model['doanhnghiep']->ngaycap_giayphep)) : '(Chưa có)' ?></td>
                             <th>Ngày thay đổi</th>
-                            <td><?= ($model['doanhnghiep']->ngay_thaydoi != null) ? date('d-m-Y', strtotime($model['doanhnghiep']->ngay_thaydoi)) : '' ?></td>
+                            <td><?= ($model['doanhnghiep']->ngay_thaydoi != null) ? date('d-m-Y', strtotime($model['doanhnghiep']->ngay_thaydoi)) : '(Chưa có)' ?></td>
                         </tr>
                         <tr>
                             <th>Điện thoại</th>
                             <td><?= ($model['doanhnghiep']->dien_thoai == null) ? '(Chưa có)' : $model['doanhnghiep']->dien_thoai ?></td>
                             <th>Vốn kinh doanh</th>
-                            <td colspan="3"><?= ($model['doanhnghiep']->von_dieule == null) ? '(Chưa có)' : $model['doanhnghiep']->von_dieule ?></td>
+                            <td ><?= ($model['doanhnghiep']->von_dieule == null) ? '(Chưa có)' :  number_format($model['doanhnghiep']->von_dieule, 0, ',', ',')?></td>
                             <th>Số lao động</th>
                             <td><?= ($model['doanhnghiep']->so_laodong == null) ? '(Chưa có)' : $model['doanhnghiep']->so_laodong ?></td>
                         </tr>

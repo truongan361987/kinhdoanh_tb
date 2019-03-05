@@ -18,12 +18,12 @@ use app\services\UtilityService;
                 <span class="selected"></span>
             </a>
         </li>
-        <li class="nav-item ">
+<!--        <li class="nav-item ">
             <a href="<?= Yii::$app->urlManager->createUrl('site/huongdan') ?>" class="nav-link nav-toggle">
                 <i class="fa fa-info"></i>
                 <span class="title">Hướng dẫn sử dụng</span>
             </a>
-        </li>
+        </li>-->
         <li class="heading">
             <h3 class="uppercase">Quản lý</h3>
         </li>
@@ -70,9 +70,9 @@ use app\services\UtilityService;
             <h3 class="uppercase">Danh mục</h3>
         </li>
         <li class="nav-item  ">
-            <a href="<?= Yii::$app->homeUrl ?>dmloaicuahang" class="nav-link ">
+            <a href="<?= Yii::$app->homeUrl ?>dmlinhvuc" class="nav-link ">
                 <i class="fa fa-list"></i>
-                <span class="title">Loại cửa hàng</span>
+                <span class="title">Lĩnh vực quản lý</span>
 
             </a>
         </li>
