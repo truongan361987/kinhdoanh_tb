@@ -49242,3 +49242,1325 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1551770185.904
     'REQUEST_TIME' => 1551770185
 ]
+2019-03-14 05:59:17 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/layouts/layout3/img/avatar2.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('assets/layouts/...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 05:59:17 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '59689'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/assets/layouts/layout3/img/avatar2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/assets/layouts/layout3/img/avatar2.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552539557.118
+    'REQUEST_TIME' => 1552539557
+]
+2019-03-14 05:59:17 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/layouts/layout3/img/logo-default.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('assets/layouts/...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 05:59:17 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '59688'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/assets/layouts/layout3/img/logo-default.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/assets/layouts/layout3/img/logo-default.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552539557.118
+    'REQUEST_TIME' => 1552539557
+]
+2019-03-14 05:59:17 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/layouts/layout3/img/avatar3.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('assets/layouts/...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 05:59:17 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '59688'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/assets/layouts/layout3/img/avatar3.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/assets/layouts/layout3/img/avatar3.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552539557.229
+    'REQUEST_TIME' => 1552539557
+]
+2019-03-14 05:59:17 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/layouts/layout3/img/avatar1.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('assets/layouts/...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 05:59:17 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '59689'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/assets/layouts/layout3/img/avatar1.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/assets/layouts/layout3/img/avatar1.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552539557.229
+    'REQUEST_TIME' => 1552539557
+]
+2019-03-14 05:59:17 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/layouts/layout3/img/avatar2.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('assets/layouts/...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 05:59:17 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '59695'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/assets/layouts/layout3/img/avatar2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/assets/layouts/layout3/img/avatar2.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552539557.262
+    'REQUEST_TIME' => 1552539557
+]
+2019-03-14 06:06:11 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/layouts/layout3/img/logo-default.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('assets/layouts/...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 06:06:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '60096'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/assets/layouts/layout3/img/logo-default.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/assets/layouts/layout3/img/logo-default.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552539971.023
+    'REQUEST_TIME' => 1552539971
+]
+2019-03-14 06:06:11 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/layouts/layout3/img/avatar2.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('assets/layouts/...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 06:06:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '60097'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/assets/layouts/layout3/img/avatar2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/assets/layouts/layout3/img/avatar2.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552539971.024
+    'REQUEST_TIME' => 1552539971
+]
+2019-03-14 06:06:11 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/layouts/layout3/img/avatar1.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('assets/layouts/...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 06:06:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '60096'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/assets/layouts/layout3/img/avatar1.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/assets/layouts/layout3/img/avatar1.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552539971.139
+    'REQUEST_TIME' => 1552539971
+]
+2019-03-14 06:06:11 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/layouts/layout3/img/avatar3.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('assets/layouts/...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 06:06:11 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '60097'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/assets/layouts/layout3/img/avatar3.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/assets/layouts/layout3/img/avatar3.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552539971.139
+    'REQUEST_TIME' => 1552539971
+]
+2019-03-14 09:36:14 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/layouts/layout4/img/avatar9.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('assets/layouts/...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 09:36:14 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '56066'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/assets/layouts/layout4/img/avatar9.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/assets/layouts/layout4/img/avatar9.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552552574.776
+    'REQUEST_TIME' => 1552552574
+]
+2019-03-14 09:56:02 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/img/layout/avatar.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('resources/img/l...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 09:56:02 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '57163'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/resources/img/layout/avatar.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/resources/img/layout/avatar.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552553762.837
+    'REQUEST_TIME' => 1552553762
+]
+2019-03-14 09:56:29 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/img/layout/avatar.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('resources/img/l...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 09:56:29 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '57217'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/resources/img/layout/avatar.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/resources/img/layout/avatar.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552553789.521
+    'REQUEST_TIME' => 1552553789
+]
+2019-03-14 09:56:49 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/img/layout/avatar.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('resources/img/l...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 09:56:49 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '57242'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/resources/img/layout/avatar.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/resources/img/layout/avatar.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552553809.604
+    'REQUEST_TIME' => 1552553809
+]
+2019-03-14 09:57:33 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/layouts/layout4/img/avatar9.jpg".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('assets/layouts/...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 09:57:33 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '57295'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/assets/layouts/layout4/img/avatar9.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/assets/layouts/layout4/img/avatar9.jpg'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552553853.712
+    'REQUEST_TIME' => 1552553853
+]
+2019-03-14 10:07:44 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/img/layout/home.png".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('resources/img/l...', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 10:07:44 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '57936'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/resources/img/layout/home.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/resources/img/layout/home.png'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552554464.016
+    'REQUEST_TIME' => 1552554464
+]
+2019-03-14 10:28:23 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "huongdan".' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('huongdan', Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-03-14 10:28:23 [::1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'ad0qf37oeq91r6e809j5k93r45'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=ad0qf37oeq91r6e809j5k93r45; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '59261'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/huongdan'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/huongdan'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552555703.942
+    'REQUEST_TIME' => 1552555703
+]
+2019-03-14 10:31:35 [::1][-][53878sddklhnnhegcq4nartm56][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in C:\xampp\htdocs\kinhdoanh_q4\views\layouts\header.php:27
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\views\layouts\header.php(27): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 27, Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\views\layouts\main.php(28): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#4 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#5 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="sit...')
+#6 C:\xampp\htdocs\kinhdoanh_q4\controllers\SiteController.php(66): yii\base\Controller->render('about')
+#7 [internal function]: app\controllers\SiteController->actionAbout()
+#8 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('about', Array)
+#11 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/about', Array)
+#12 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#14 {main}
+2019-03-14 10:31:35 [::1][-][53878sddklhnnhegcq4nartm56][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => '53878sddklhnnhegcq4nartm56'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=53878sddklhnnhegcq4nartm56'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '59451'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/site/about'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/site/about'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552555895.261
+    'REQUEST_TIME' => 1552555895
+]
+2019-03-14 10:36:57 [::1][0][c3ij47havme7t0i62fokb7cp96][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in C:\xampp\htdocs\kinhdoanh_q4\views\site\contact.php:46
+Stack trace:
+#0 C:\xampp\htdocs\kinhdoanh_q4\views\site\contact.php(46): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\View.php(325): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(app\controllers\SiteController))
+#4 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('contact', Array, Object(app\controllers\SiteController))
+#5 C:\xampp\htdocs\kinhdoanh_q4\controllers\SiteController.php(72): yii\base\Controller->render('contact')
+#6 [internal function]: app\controllers\SiteController->actionContact()
+#7 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('contact', Array)
+#10 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('site/contact', Array)
+#11 C:\xampp\htdocs\kinhdoanh_q4\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\kinhdoanh_q4\index.php(12): yii\base\Application->run()
+#13 {main}
+2019-03-14 10:36:56 [::1][0][c3ij47havme7t0i62fokb7cp96][info][application] $_COOKIE = [
+    '_csrf' => 'b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9\";}'
+    'PHPSESSID' => 'c3ij47havme7t0i62fokb7cp96'
+    '_identity' => '4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a:2:{i:0;s:9:\"_identity\";i:1;s:16:\"[0,null,2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 0
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost:81'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost:81/kinhdoanh_q4/user/bando'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.9,en-US;q=0.8,vi;q=0.7'
+    'HTTP_COOKIE' => '_csrf=b97f53b11f3ba4d135fff52a42816dbf971155cd9625c9a161538e249d0fc663a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pMDcEPF6oqMxDNRGOxO-SJdMMj1J_Tb9%22%3B%7D; PHPSESSID=c3ij47havme7t0i62fokb7cp96; _identity=4ffee5689d75fa81c789137d740657f8afb7279273d9fb65929138560c32b8c8a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A16%3A%22%5B0%2Cnull%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\VSShell\\Common7\\IDE\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\100\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\100\\DTS\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\GeoNode-2.4.x\\Apache2\\bin;C:\\Program Files (x86)\\Microsoft VS Code\\bin;C:\\Users\\User\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\User\\AppData\\Local\\GitHubDesktop\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23 Server at localhost Port 81</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.17 (Win32) OpenSSL/1.0.2d PHP/5.6.23'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '81'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/kinhdoanh_q4/index.php'
+    'REMOTE_PORT' => '59816'
+    'REDIRECT_URL' => 'http://localhost:81/kinhdoanh_q4/site/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/kinhdoanh_q4/site/contact'
+    'SCRIPT_NAME' => '/kinhdoanh_q4/index.php'
+    'PATH_INFO' => '/'
+    'PATH_TRANSLATED' => 'C:\\xampp\\htdocs\\index.php'
+    'PHP_SELF' => '/kinhdoanh_q4/index.php/'
+    'REQUEST_TIME_FLOAT' => 1552556216.889
+    'REQUEST_TIME' => 1552556216
+]

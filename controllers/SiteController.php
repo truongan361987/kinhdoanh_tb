@@ -5,8 +5,7 @@ namespace app\controllers;
 use app\controllers\base\AbstractKinhdoanhq6Controller;
 use Yii;
 
-class SiteController extends AbstractKinhdoanhq6Controller
-{
+class SiteController extends AbstractKinhdoanhq6Controller {
     /**
      * @inheritdoc
      */
@@ -14,8 +13,7 @@ class SiteController extends AbstractKinhdoanhq6Controller
     /**
      * @inheritdoc
      */
-    public function actions()
-    {
+    public function actions() {
         return [
             'error' => [
                 'class' => 'yii\web\ErrorAction',
@@ -32,9 +30,8 @@ class SiteController extends AbstractKinhdoanhq6Controller
      *
      * @return string
      */
-    public function actionIndex()
-    {
-       return $this->redirect(Yii::$app->urlManager->createUrl('user/bando'));
+    public function actionIndex() {
+        return $this->redirect(Yii::$app->urlManager->createUrl('user/bando'));
     }
 
     /**
@@ -42,30 +39,37 @@ class SiteController extends AbstractKinhdoanhq6Controller
      *
      * @return string
      */
-    public function actionMap()
-    {
+    public function actionMap() {
         $this->layout = "@app/views/layouts/layout_map";
         return $this->render('map');
     }
 
-    public function actionSearch()
-    {
+    public function actionSearch() {
         // DebugService::dumpdie(Yii::$app->request->post());
         $post = Yii::$app->request->post();
         // $chuyengia = " ho_ten like '%" . mb_strtoupper($post['ho_ten']) . "%'";
         return $this->redirect(Yii::$app->homeUrl . 'site/map?key=1=1%20and%20ten_hkd%20like%20%27%25' . mb_strtoupper($post['ten_hkd']) . '%25%27');
     }
 
-    public function actionTest()
-    {
+    public function actionTest() {
         $model = null;
         return $this->render('test', [
-            'model' => $model
+                    'model' => $model
         ]);
     }
 
-    public function actionHuongdan(){
+    public function actionHuongdan() {
         return $this->render('huongdan');
+    }
+
+    public function actionAbout() {
+        $this->layout = "@app/views/layouts/user/main_user";
+        return $this->render('about');
+    }
+
+    public function actionContact() {
+        $this->layout = "@app/views/layouts/user/main_user";
+        return $this->render('contact');
     }
 
 }

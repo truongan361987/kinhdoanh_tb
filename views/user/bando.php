@@ -16,29 +16,76 @@
     }
 
     #geocomplete-wrapper {
-        position: absolute;
-        top: 30px;
-        left: 70px;
-        z-index: 1000;
+     
         width: 500px;
     }
     #geocomplete { background-color: rgba(255,255,255,0.8); }
 
 </style>
-<div class="row ">
-    <div class="col-sm-12 no-padding">
-        <div class="col-sm-12 no-padding">
-            <div class="portlet light bordered">
-                <div class="portlet-body">
+
+<div class="row">
+
+    <div class="col-md-12 ">
+        <!-- BEGIN GEOCODING PORTLET-->
+        <div class="portlet light portlet-fit bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class=" icon-layers font-green"></i>
+                    <span class="caption-subject font-green bold uppercase">Bản đồ</span>
+                </div>
+                <div class="actions">
+                   <div class="input-group" id="geocomplete-wrapper">
+                           <input type="text" id='geocomplete' class="form-control " placeholder="Nhập vị trí cần tìm..." name="query">
+                        <span class="input-group-btn">
+                            <button class="btn blue" id="gmap_geocoding_btn">
+                                <i class="fa fa-search"></i>
+                            </button></span></div>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <!--                <form class="form-inline margin-bottom-10" action="#">
+                                    <div class="input-group" id="geocomplete-wrapper">
+                                           <input type="text" id='geocomplete' class="form-control " placeholder="Nhập vị trí cần tìm..." name="query">
+                                        <span class="input-group-btn">
+                                            <button class="btn blue" id="gmap_geocoding_btn">
+                                                <i class="fa fa-search"></i>
+                
+                                            </button></span></div>
+                                </form>-->
+               <div id="map" class="gmaps"> </div>
+            </div>
+        </div>
+        <!-- END GEOCODING PORTLET-->
+    </div>
+</div>
+<!--<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="dashboard-stat2 bordered">
+            <div class="display">
+                <div class="number">
+                    <h3 class="font-green-sharp">
+                        <span data-counter="counterup" data-value="7800">7800</span>
+                        <small class="font-green-sharp">$</small>
+
+                    </h3>
                     <div id="geocomplete-wrapper">
                         <input class='form-control' id='geocomplete' placeholder="Nhập vào địa chỉ cần tìm">
                     </div>
-                    <div id="map"></div>
                 </div>
+                <div class="icon">
+                    <i class="icon-pie-chart"></i>
+                </div>
+            </div>
+            <div class="progress-info">
+
+                <div id="map"></div>
             </div>
         </div>
     </div>
-</div>
+
+
+
+</div>-->
 
 <script>
     var defined = {
@@ -257,8 +304,8 @@
                         })
                         this.openPopup();
                     });
-                     leafletMarker.on('mouseout', function (e) {
-                       this.closePopup();
+                    leafletMarker.on('mouseout', function (e) {
+                        this.closePopup();
                     });
                     leafletMarker.on('click', function () {
                         var popupid = 'marker-popup-' + data.id;

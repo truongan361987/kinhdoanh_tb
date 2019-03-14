@@ -67,7 +67,7 @@ class AuthController extends Controller
 
         $model = new LoginForm();
         if ($request->isPost) {
-//            DebugService::dumpdie($request);
+        //   DebugService::dumpdie($request);
             $model->load($request->post());
             if (!$model->checkUsername()) {
                 UtilityService::alert('error_username');

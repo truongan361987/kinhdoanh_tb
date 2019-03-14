@@ -22,13 +22,13 @@ class AbstractKinhdoanhq6Controller extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login','index', 'hokinhdoanh-geojson','list-hokinhdoanh','hokinhdoanh-get','hokinhdoanh-incircle','poidetail-incircle'],
+                        'actions' => ['login','index', 'about','contact','hokinhdoanh-geojson','list-hokinhdoanh','hokinhdoanh-get','hokinhdoanh-incircle','poidetail-incircle'],
                         'allow' => true,
                         'roles' => ['?'],
                     ],
                     [
                         'actions' => [
-                            'login', 'logout', 'index', 'thongtincanhan', 'map', 'changepass', 'search','bando','huongdan',
+                            'login', 'logout', 'index', 'thongtincanhan', 'map', 'changepass', 'search','bando','huongdan','about','contact',
                             ////hokinhdoanh-bando
                             'hokinhdoanh-geojson','list-hokinhdoanh','hokinhdoanh-get','hokinhdoanh-incircle','poidetail-incircle','createvipham','vipham','updatevipham','deletevipham','timkiem',
                             ///doanhnghiep-bando

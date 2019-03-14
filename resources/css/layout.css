@@ -103,7 +103,7 @@ Page Header
           .page-header.navbar .search-form .input-group .input-group-btn .btn.submit > i {
             font-size: 13px; }
     .page-header.navbar .search-form.open {
-      width: 250px !important; }
+      width: 500px !important; }
       .page-header.navbar .search-form.open .input-group .form-control {
         text-indent: 0;
         padding: 6px 12px; }

@@ -17,6 +17,7 @@ class LoginForm extends Model
 {
     public $ten_dang_nhap;
     public $mat_khau;
+    public $last_login;
     public $rememberMe = true;
 
     private $_user = false;

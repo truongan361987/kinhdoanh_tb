@@ -14,16 +14,75 @@
                  class="logo-default"/>  </a>
 
     </div>
+    <div class="page-actions">
+        <div class="btn-group">
+            <a href="<?= Yii::$app->urlManager->createUrl('site/about') ?>" class="btn red-haze btn-sm dropdown-toggle" >
+                <i class="fa fa-home"></i>
+                <span class="hidden-sm hidden-xs">GIỚI THIỆU</span>
+
+                </a>
+
+        </div>
+    </div>
+    <div class="page-actions">
+        <div class="btn-group">
+            <a href="<?= Yii::$app->urlManager->createUrl('') ?>" class="btn red-haze btn-sm dropdown-toggle" >
+                <i class="fa fa-book"></i>
+                <span class="hidden-sm hidden-xs">HƯỚNG DẪN</span>
+            </a>
+        </div>
+    </div>
+    <div class="page-actions">
+        <div class="btn-group">
+            <a href="<?= Yii::$app->urlManager->createUrl('user/bando') ?>" class="btn red-haze btn-sm dropdown-toggle" >
+                <i class="fa fa-map-marker"></i>
+                <span class="hidden-sm hidden-xs">BẢN ĐỒ</span>
+            </a>
+        </div>
+    </div>
+    <div class="page-actions">
+        <div class="btn-group">
+            <a href="<?= Yii::$app->urlManager->createUrl('site/contact') ?>" class="btn red-haze btn-sm dropdown-toggle" >
+                <i class="fa fa-address-book"></i>
+                <span class="hidden-sm hidden-xs">LIÊN HỆ</span>
+
+            </a>
+
+        </div>
+    </div>
     <div class="page-top">
-       
         <div class="top-menu">
             <ul class="nav navbar-nav pull-right">
+                <!--                <li class="dropdown dropdown-user dropdown-dark">
+                
+                                </li>
+                
+                                <li class="dropdown dropdown-user dropdown-dark">
+                                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                        <i class="icon-book-open"></i>
+                                        <span class="badge badge-danger"> HƯỚNG DẪN </span>
+                                    </a>
+                                </li>
+                
+                                <li class="dropdown dropdown-user dropdown-dark">
+                                    <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                                       data-close-others="true" >
+                                        <i class="icon-credit-card"></i>
+                
+                                        <span class="badge badge-danger"> LIÊN HỆ </span>
+                
+                                         DOC: Do not remove below empty space(&nbsp;) as its purposely used 
+                                    </a>
+                
+                                </li>-->
                 <?php if (!Yii::$app->user->isGuest): ?>
 
                     <li class="dropdown dropdown-user dropdown-dark">
                         <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
                            data-close-others="true" >
-                            <span class="username username-hide-on-mobile"><span class="fa fa-user"></span> <?= Yii::$app->user->identity->ten_dang_nhap ?></span>
+                            <img alt="" class="img-circle" src="<?= Yii::$app->homeUrl ?>resources/img/layout/avatar.png">
+                            <span class="username username-hide-mobile"><?= Yii::$app->user->identity->ten_dang_nhap ?></span>
+
                             <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
                         </a>
                         <ul class="dropdown-menu dropdown-menu-default">
@@ -60,12 +119,12 @@
                 <?php endif; ?>
 
                 <li class="dropdown dropdown-extended quick-sidebar-toggler">
-
                     <i class="icon-logout"></i>
                 </li>
 
-
             </ul>
         </div>
+
     </div>
+
 </div>

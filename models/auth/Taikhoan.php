@@ -152,4 +152,5 @@ class Taikhoan extends \yii\db\ActiveRecord implements IdentityInterface
     {
         return $this->mat_khau === md5($password.'@hcmgis#2018');
     }
+    
 }
