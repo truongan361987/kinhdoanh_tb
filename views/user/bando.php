@@ -16,7 +16,7 @@
     }
 
     #geocomplete-wrapper {
-     
+
         width: 500px;
     }
     #geocomplete { background-color: rgba(255,255,255,0.8); }
@@ -24,35 +24,45 @@
 </style>
 
 <div class="row">
-
+    <!--<div class="portlet light">
+                                    <div class="portlet-title">
+                                        <div class="caption">
+                                            <i class="icon-paper-plane font-yellow-casablanca"></i>
+                                            <span class="caption-subject bold font-yellow-casablanca uppercase"> Bản đồ </span>
+                             
+                                        </div>
+                                        <div class="inputs">
+                                            <div class="portlet-input input-inline input-medium">
+                                                <div class="input-group"  id="geocomplete-wrapper">
+                                                    <input type="text" id='geocomplete' class="form-control input-circle-left" placeholder="Nhập vị trí cần tìm...">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body">
+                                         <div id="map" class="gmaps"> </div>
+                                    </div>
+                                </div>-->
     <div class="col-md-12 ">
         <!-- BEGIN GEOCODING PORTLET-->
-        <div class="portlet light portlet-fit bordered">
+        <div class="portlet light ">
             <div class="portlet-title">
                 <div class="caption">
                     <i class=" icon-layers font-green"></i>
                     <span class="caption-subject font-green bold uppercase">Bản đồ</span>
+                   
                 </div>
                 <div class="actions">
-                   <div class="input-group" id="geocomplete-wrapper">
-                           <input type="text" id='geocomplete' class="form-control " placeholder="Nhập vị trí cần tìm..." name="query">
-                        <span class="input-group-btn">
-                            <button class="btn blue" id="gmap_geocoding_btn">
-                                <i class="fa fa-search"></i>
-                            </button></span></div>
+                    <div class="input-group" id="geocomplete-wrapper">
+                        <div class="input-icon right">
+                            <i class="icon-magnifier"></i>
+                            <input type="text" id='geocomplete' class="form-control input-circle" placeholder="Nhập vị trí cần tìm..."></div>
+                    </div>
                 </div>
             </div>
             <div class="portlet-body">
-                <!--                <form class="form-inline margin-bottom-10" action="#">
-                                    <div class="input-group" id="geocomplete-wrapper">
-                                           <input type="text" id='geocomplete' class="form-control " placeholder="Nhập vị trí cần tìm..." name="query">
-                                        <span class="input-group-btn">
-                                            <button class="btn blue" id="gmap_geocoding_btn">
-                                                <i class="fa fa-search"></i>
-                
-                                            </button></span></div>
-                                </form>-->
-               <div id="map" class="gmaps"> </div>
+                <div id="map" class="gmaps"> </div>
             </div>
         </div>
         <!-- END GEOCODING PORTLET-->
@@ -375,7 +385,7 @@
                 mapZoomAndPanTo(y, x, 20);
         });
     }
-
+ 
     function initDrawControl(config) {
         DATA.MapLayer.drawlayer = new L.FeatureGroup();
         DATA[config.mapId].Map.addLayer(DATA.MapLayer.drawlayer);

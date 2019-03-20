@@ -75,7 +75,7 @@ class VHokinhdoanh extends \yii\db\ActiveRecord
     {
         return [
             'id_hkd' => 'Id Hkd',
-            'ten_hkd' => 'Ten hộ',
+            'ten_hkd' => 'Tên hộ',
             'dien_thoai' => 'Dien Thoai',
             'fax' => 'Fax',
             'email' => 'Email',

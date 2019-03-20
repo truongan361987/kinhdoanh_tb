@@ -74,13 +74,13 @@ class VDoanhnghiep extends \yii\db\ActiveRecord
     {
         return [
             'id_doanhnghiep' => 'Id Doanhnghiep',
-            'ten_dn' => 'Ten DN',
+            'ten_dn' => 'Tên DN',
             'loaihinhdn_id' => 'Loaihinhdn ID',
             'so_nha' => 'Số nhà',
             'ten_duong' => 'Tên đường',
             'ten_phuong' => 'Phường',
             'von_dieule' => 'Vốn điều lệ',
-            'dien_thoai' => 'điện thoại',
+            'dien_thoai' => 'Điện thoại',
             'nguoi_daidien' => 'Người đại diện',
             'nganh_kd' => 'Ngành nghề',
             'ngaycap_giayphep' => 'Ngày cấp giấy phép',
