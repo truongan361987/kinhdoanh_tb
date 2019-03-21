@@ -22,7 +22,7 @@ class AbstractKinhdoanhq6Controller extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'actions' => ['login','index', 'about','contact','hokinhdoanh-geojson','list-hokinhdoanh','hokinhdoanh-get','hokinhdoanh-incircle','poidetail-incircle'],
+                        'actions' => ['login','index', 'about','contact','huongdan','bando','hokinhdoanh-geojson','list-hokinhdoanh','hokinhdoanh-get','hokinhdoanh-incircle','poidetail-incircle'],
                         'allow' => true,
                         'roles' => ['?'],
                     ],

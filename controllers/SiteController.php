@@ -35,7 +35,7 @@ class SiteController extends AbstractKinhdoanhq6Controller {
      * @return string
      */
     public function actionIndex() {
-        return $this->redirect(Yii::$app->urlManager->createUrl('user/bando'));
+        return $this->redirect(Yii::$app->urlManager->createUrl('site/contact'));
     }
 
     /**
