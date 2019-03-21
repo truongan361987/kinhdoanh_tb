@@ -3,7 +3,11 @@
 namespace app\controllers;
 
 use app\controllers\base\AbstractKinhdoanhq6Controller;
+use app\models\DoanhNghiep;
+use app\models\HoKinhDoanh;
 use Yii;
+use const YII_ENV_TEST;
+use function mb_strtoupper;
 
 class SiteController extends AbstractKinhdoanhq6Controller {
     /**
@@ -59,6 +63,7 @@ class SiteController extends AbstractKinhdoanhq6Controller {
     }
 
     public function actionHuongdan() {
+        $this->layout = "@app/views/layouts/user/main_user";
         return $this->render('huongdan');
     }
 
@@ -68,8 +73,12 @@ class SiteController extends AbstractKinhdoanhq6Controller {
     }
 
     public function actionContact() {
+        $hkd = HoKinhDoanh::find()->count();
+        $dn = DoanhNghiep::find()->count();
         $this->layout = "@app/views/layouts/user/main_user";
-        return $this->render('contact');
+        return $this->render('contact', [
+                    'hkd' => $hkd,
+                    'dn' => $dn]);
     }
 
 }

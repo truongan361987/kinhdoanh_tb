@@ -1,44 +1,42 @@
-<?php
-
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model app\models\ContactForm */
-
-use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
-use yii\captcha\Captcha;
-
-$this->title = 'Contact';
-$this->params['breadcrumbs'][] = $this->title;
-?>
-<div class="site-contact">
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
-
-        <div class="alert alert-success">
-            Thank you for contacting us. We will respond to you as soon as possible.
+<div class="row margin-bottom-40 about-header">
+    <div class="col-md-12">
+        <h1>UỶ BAN NHÂN DÂN QUẬN 4</h1>
+        <h2>TRA CỨU VỊ TRÍ ĐĂNG KÝ KINH DOANH</h2>
+        <a href="<?= Yii::$app->urlManager->createUrl('user/bando') ?>" class="btn red-haze btn-sm dropdown-toggle input-circle" >
+            <h4>   <i class="icon icon-layers"></i>
+                <span class="hidden-sm hidden-xs">BẢN ĐỒ</span></h4>
+        </a>
+    </div>
+</div>
+<div class="row margin-bottom-20">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="dashboard-stat2 bordered">
+            <div class="display">
+                <div class="number">
+                    <h3 class="font-red-haze">
+                        <span><?= $hkd ?></span>
+                    </h3>
+                    <small>Hộ kinh doanh</small>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-user-circle-o"></i>
+                </div>
+            </div>
         </div>
-
-        <p>
-            Note that if you turn on the Yii debugger, you should be able
-            to view the mail message on the mail panel of the debugger.
-            <?php if (Yii::$app->mailer->useFileTransport): ?>
-                Because the application is in development mode, the email is not sent but saved as
-                a file under <code><?= Yii::getAlias(Yii::$app->mailer->fileTransportPath) ?></code>.
-                Please configure the <code>useFileTransport</code> property of the <code>mail</code>
-                application component to be false to enable email sending.
-            <?php endif; ?>
-        </p>
-
-    <?php else: ?>
-
-        <p>
-            If you have business inquiries or other questions, please fill out the following form to contact us.
-            Thank you.
-        </p>
-
-      
-
-    <?php endif; ?>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="dashboard-stat2 bordered">
+            <div class="display">
+                <div class="number">
+                    <h3 class="font-red-haze">
+                        <span><?= $dn ?></span>
+                    </h3>
+                    <small>Doanh nghiệp</small>
+                </div>
+                <div class="icon">
+                    <i class="fa fa-building"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
