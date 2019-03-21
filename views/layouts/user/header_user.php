@@ -16,7 +16,7 @@
     </div>
     <div class="page-actions">
         <div class="btn-group">
-            <a href="<?= Yii::$app->urlManager->createUrl('site/about') ?>" class="btn red-haze btn-sm dropdown-toggle input-circle" >
+            <a href="<?= Yii::$app->urlManager->createUrl('site/contact') ?>" class="btn red-haze btn-sm dropdown-toggle input-circle" >
                 <i class="fa fa-home"></i>
                 <span class="hidden-sm hidden-xs">GIỚI THIỆU</span>
 
@@ -26,7 +26,7 @@
     </div>
     <div class="page-actions">
         <div class="btn-group">
-            <a href="<?= Yii::$app->urlManager->createUrl('site') ?>" class="btn red-haze btn-sm dropdown-toggle input-circle" >
+            <a href="<?= Yii::$app->urlManager->createUrl('site/huongdan') ?>" class="btn red-haze btn-sm dropdown-toggle input-circle" >
                 <i class="fa fa-book"></i>
                 <span class="hidden-sm hidden-xs">HƯỚNG DẪN</span>
             </a>
@@ -42,7 +42,7 @@
     </div>
     <div class="page-actions">
         <div class="btn-group">
-            <a href="<?= Yii::$app->urlManager->createUrl('site/contact') ?>" class="btn red-haze btn-sm dropdown-toggle input-circle" >
+            <a href="<?= Yii::$app->urlManager->createUrl('site/about') ?>" class="btn red-haze btn-sm dropdown-toggle input-circle" >
                 <i class="fa fa-address-book"></i>
                 <span class="hidden-sm hidden-xs">LIÊN HỆ</span>
 
