@@ -9,7 +9,7 @@ use johnitvn\ajaxcrud\CrudAsset;
 /* @var $searchModel app\models\DmLinhvucSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Dm Linhvucs';
+$this->title = 'Danh mục Lĩnh vực';
 $this->params['breadcrumbs'][] = $this->title;
 
 CrudAsset::register($this);
@@ -36,7 +36,7 @@ CrudAsset::register($this);
             'responsive' => true,          
             'panel' => [
                 'type' => 'primary', 
-                'heading' => '<i class="glyphicon glyphicon-list"></i> Dm Linhvucs listing',
+                'heading' => '<i class="glyphicon glyphicon-list"></i> Danh mục Lĩnh vực',
                 'after'=>false,
             ]
         ])?>

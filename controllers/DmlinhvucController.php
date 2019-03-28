@@ -44,7 +44,7 @@ class DmlinhvucController extends Controller
         if($request->isAjax){
             Yii::$app->response->format = Response::FORMAT_JSON;
             return [
-                'title'=> "<b>Chi tiết DmLinhvuc</b>",
+                'title'=> "<b>Chi tiết Lĩnh vực</b>",
                     'content'=>$this->renderAjax('view', [
                         'model' => $this->findModel($id),
                     ]),
@@ -76,7 +76,7 @@ class DmlinhvucController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> "<b>Thêm mới DmLinhvuc</b>",
+                    'title'=> "<b>Thêm mới Lĩnh vực</b>",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -88,14 +88,14 @@ class DmlinhvucController extends Controller
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
                     'title'=> "<b>Thêm mới DmLinhvuc</b>",
-                    'content'=>'<span class="text-success">Thêm mới DmLinhvuc thành công</span>',
+                    'content'=>'<span class="text-success">Thêm mới Lĩnh vực thành công</span>',
                     'footer'=> Html::button('Đóng',['class'=>'btn btn-default pull-right','data-dismiss'=>"modal"]).
                             Html::a('Tiếp tục thêm mới',['create'],['class'=>'btn btn-success pull-left','role'=>'modal-remote'])
         
                 ];         
             }else{           
                 return [
-                    'title'=> "<b>Thêm mới DmLinhvuc</b>",
+                    'title'=> "<b>Thêm mới Lĩnh vực</b>",
                     'content'=>$this->renderAjax('create', [
                         'model' => $model,
                     ]),
@@ -138,7 +138,7 @@ class DmlinhvucController extends Controller
             Yii::$app->response->format = Response::FORMAT_JSON;
             if($request->isGet){
                 return [
-                    'title'=> "<b>Cập nhật DmLinhvuc</b>",
+                    'title'=> "<b>Cập nhật Lĩnh vực</b>",
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
@@ -148,7 +148,7 @@ class DmlinhvucController extends Controller
             }else if($model->load($request->post()) && $model->save()){
                 return [
                     'forceReload'=>'#crud-datatable-pjax',
-                    'title'=> "<b>Chi tiết DmLinhvuc</b>",
+                    'title'=> "<b>Chi tiết Lĩnh vực</b>",
                     'content'=>$this->renderAjax('view', [
                         'model' => $model,
                     ]),
@@ -157,7 +157,7 @@ class DmlinhvucController extends Controller
                 ];    
             }else{
                  return [
-                    'title'=> "<b>Chi tiết DmLinhvuc</b>",
+                    'title'=> "<b>Chi tiết Lĩnh vực</b>",
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                     ]),
