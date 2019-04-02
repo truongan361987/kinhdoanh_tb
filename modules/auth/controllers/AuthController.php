@@ -21,7 +21,7 @@ class AuthController extends Controller
 
     public function actionThongTinCaNhan()
     {
-        $this->layout = "@app/views/layouts/main";
+        $this->layout = "@app/views/layouts/user/main_user";
 
         $request = \Yii::$app->request;
         $model['tai-khoan'] = TaikhoanInfo::find()->where(['taikhoan_id' => \Yii::$app->user->id])->one();
@@ -38,7 +38,7 @@ class AuthController extends Controller
 
     public function actionDoiMatKhau()
     {
-        $this->layout = "@app/views/layouts/main";
+          $this->layout = "@app/views/layouts/user/main_user";
 
         $request = \Yii::$app->request;
         $model['doimatkhau'] = new DoiMatKhau();
